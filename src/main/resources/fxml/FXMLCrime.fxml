@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="900.0" prefWidth="1300.0" style="-fx-background-color: #000000;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tushar.cias_btushar.FXMLCrimeController">
+    <children>
+        <AnchorPane layoutX="30.0" layoutY="158.0" prefHeight="276.0" prefWidth="1242.0" stylesheets="@new.css">
+            <children>
+                <Button fx:id="btn" mnemonicParsing="false" onAction="#openBtn" prefHeight="41.0" prefWidth="235.0" styleClass="a1" stylesheets="@new.css" text="Assault" textFill="WHITE">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </Button>
+                <Button fx:id="burglary" layoutX="253.0" mnemonicParsing="false" onAction="#openburglary" prefHeight="41.0" prefWidth="235.0" styleClass="a5" stylesheets="@new.css" text="Robbery" textFill="WHITE">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </Button>
+                <Button fx:id="Murder" layoutX="1.0" layoutY="70.0" mnemonicParsing="false" onAction="#openMurder" prefHeight="41.0" prefWidth="235.0" styleClass="a13" stylesheets="@new.css" text="Murder" textFill="WHITE">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </Button>
+                <Button fx:id="Extortion" layoutX="253.0" layoutY="70.0" mnemonicParsing="false" onAction="#openExtortion" prefHeight="41.0" prefWidth="235.0" styleClass="a10" stylesheets="@new.css" text="Extortion" textFill="WHITE">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </Button>
+                <Button fx:id="terrorism" layoutX="504.0" mnemonicParsing="false" onAction="#openterrorism" prefHeight="41.0" prefWidth="235.0" styleClass="a7" stylesheets="@new.css" text="Terrorism" textFill="WHITE">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </Button>
+                <Button fx:id="MoneyL" layoutX="504.0" layoutY="70.0" mnemonicParsing="false" onAction="#openMoneyL" prefHeight="41.0" prefWidth="235.0" styleClass="a14" stylesheets="@new.css" text="Money Laundering" textFill="WHITE">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </Button>
+                <Button fx:id="Abduction" layoutX="753.0" mnemonicParsing="false" onAction="#openAbduction" prefHeight="41.0" prefWidth="235.0" styleClass="a8" stylesheets="@new.css" text="Abduction" textFill="WHITE">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </Button>
+                <Button fx:id="BlackM" layoutX="753.0" layoutY="70.0" mnemonicParsing="false" onAction="#openBlackM" prefHeight="41.0" prefWidth="235.0" styleClass="a16" stylesheets="@new.css" text="Black Marketing" textFill="WHITE">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </Button>
+                <Button fx:id="Dowry" layoutX="1007.0" mnemonicParsing="false" onAction="#openDowry" prefHeight="41.0" prefWidth="235.0" styleClass="a6" stylesheets="@new.css" text="Dowry" textFill="WHITE">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </Button>
+                <Button fx:id="Corruption" layoutX="1007.0" layoutY="70.0" mnemonicParsing="false" onAction="#openCorruption" prefHeight="41.0" prefWidth="235.0" styleClass="a12" stylesheets="@new.css" text="Corruption" textFill="WHITE">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </Button>
+                <Button fx:id="ArmT" layoutY="138.0" mnemonicParsing="false" onAction="#openArmT" prefHeight="41.0" prefWidth="235.0" styleClass="a4" stylesheets="@new.css" text="Arm Trafficking" textFill="WHITE">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </Button>
+                <Button fx:id="Cyberc" layoutX="253.0" layoutY="138.0" mnemonicParsing="false" onAction="#openCyberc" prefHeight="41.0" prefWidth="235.0" styleClass="a17" stylesheets="@new.css" text="Cyber Crime" textFill="WHITE">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </Button>
+                <Button fx:id="childP" layoutY="208.0" mnemonicParsing="false" onAction="#openchildP" prefHeight="41.0" prefWidth="235.0" styleClass="a18" stylesheets="@new.css" text="Child Pornography" textFill="WHITE">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </Button>
+                <Button fx:id="humanT" layoutX="253.0" layoutY="208.0" mnemonicParsing="false" onAction="#openhumanT" prefHeight="41.0" prefWidth="235.0" styleClass="a9" stylesheets="@new.css" text="Human Trafficking" textFill="WHITE">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </Button>
+                <Button fx:id="drugs" layoutX="504.0" layoutY="138.0" mnemonicParsing="false" onAction="#opendrugs" prefHeight="41.0" prefWidth="235.0" styleClass="a15" stylesheets="@new.css" text="Drugs Trafficking" textFill="WHITE">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </Button>
+                <Button fx:id="forcedM" layoutX="504.0" layoutY="208.0" mnemonicParsing="false" onAction="#openforcedM" prefHeight="41.0" prefWidth="235.0" styleClass="a2" stylesheets="@new.css" text="Forced Marriage" textFill="WHITE">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </Button>
+                <Button fx:id="Stalking" layoutX="753.0" layoutY="138.0" mnemonicParsing="false" onAction="#openStalking" prefHeight="41.0" prefWidth="235.0" styleClass="a3" stylesheets="@new.css" text="Stalking" textFill="WHITE">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </Button>
+                <Button fx:id="Acid" layoutX="753.0" layoutY="208.0" mnemonicParsing="false" onAction="#openacid" prefHeight="41.0" prefWidth="235.0" styleClass="a19" stylesheets="@new.css" text=" Acid Attack" textFill="WHITE">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </Button>
+                <Button fx:id="Rape" layoutX="1007.0" layoutY="138.0" mnemonicParsing="false" onAction="#openRape" prefHeight="41.0" prefWidth="235.0" styleClass="a20" stylesheets="@new.css" text="Rape" textFill="WHITE">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </Button>
+                <Button fx:id="ragging" layoutX="1007.0" layoutY="208.0" mnemonicParsing="false" onAction="#openRagging" prefHeight="41.0" prefWidth="235.0" styleClass="a11" stylesheets="@new.css" text="Ragging" textFill="WHITE">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </Button>
+            </children>
+        </AnchorPane>
+        <Label layoutX="533.0" layoutY="34.0" prefHeight="21.0" prefWidth="235.0" text="Crime Information" textFill="WHITE">
+            <font>
+                <Font size="27.0" />
+            </font>
+        </Label>
+        <JFXTextField fx:id="searchCr" focusColor="WHITE" layoutX="467.0" layoutY="86.0" onKeyPressed="#searchCrime" prefHeight="39.0" prefWidth="367.0" promptText="   Find a Crime" style="-fx-background-color: #ffffff;" unFocusColor="WHITE" AnchorPane.leftAnchor="467.0" />
+        <FontAwesomeIcon fontSmoothingType="LCD" glyphName="SEARCH" layoutX="810.0" layoutY="110.0" opacity="0.51" wrappingWidth="13.928571701049805" />
+        <AnchorPane layoutY="425.0" prefHeight="136.0" prefWidth="1319.0">
+            <children>
+                <Label layoutX="76.0" layoutY="25.0" prefHeight="39.0" prefWidth="1022.0" text="&quot;The Constitution of India is the longest written constitution for a country, containing " textFill="RED" wrapText="true">
+                    <font>
+                        <Font size="27.0" />
+                    </font>
+                </Label>
+                <Label layoutX="1098.0" layoutY="25.0" prefHeight="39.0" prefWidth="145.0" text="450 Articles" textFill="#00ff4d" wrapText="true">
+                    <font>
+                        <Font size="27.0" />
+                    </font>
+                </Label>
+                <Label layoutX="76.0" layoutY="73.0" prefHeight="39.0" prefWidth="161.0" text="12 Schedules" textFill="#00ff4d" wrapText="true">
+                    <font>
+                        <Font size="27.0" />
+                    </font>
+                </Label>
+                <Label layoutX="251.0" layoutY="73.0" prefHeight="39.0" prefWidth="215.0" text="103 Amendments" textFill="#00ff4d" wrapText="true">
+                    <font>
+                        <Font size="27.0" />
+                    </font>
+                </Label>
+                <Label layoutX="480.0" layoutY="73.0" prefHeight="39.0" prefWidth="199.0" text="117,369 Words" textFill="#00ff4d" wrapText="true">
+                    <font>
+                        <Font size="27.0" />
+                    </font>
+                </Label>
+                <Label layoutX="237.0" layoutY="73.0" prefHeight="39.0" prefWidth="14.0" text="," textFill="RED" wrapText="true">
+                    <font>
+                        <Font size="27.0" />
+                    </font>
+                </Label>
+                <Label layoutX="466.0" layoutY="73.0" prefHeight="39.0" prefWidth="14.0" text="," textFill="RED" wrapText="true">
+                    <font>
+                        <Font size="27.0" />
+                    </font>
+                </Label>
+                <Label layoutX="665.0" layoutY="73.0" prefHeight="39.0" prefWidth="14.0" text="&quot;" textFill="RED" wrapText="true">
+                    <font>
+                        <Font size="27.0" />
+                    </font>
+                </Label>
+                <Label layoutX="693.0" layoutY="82.0" prefHeight="21.0" prefWidth="351.0" text="How many of them do you know ?" textFill="WHITE" />
+                <Separator layoutX="22.0" layoutY="7.0" opacity="0.64" prefHeight="15.0" prefWidth="1254.0" />
+                <Separator layoutX="22.0" layoutY="115.0" opacity="0.64" prefHeight="15.0" prefWidth="1254.0" />
+            </children>
+        </AnchorPane>
+        <Pane layoutX="59.0" layoutY="600.0" prefHeight="136.0" prefWidth="474.0" style="-fx-border-color: #30303d; -fx-border-radius: 25px;" stylesheets="@StyleSheet.css">
+            <children>
+                <JFXButton fx:id="p1" alignment="CENTER" layoutX="218.0" layoutY="10.0" onAction="#play" prefHeight="39.0" prefWidth="73.0" style="-fx-background-color: #30303d;" stylesheets="@StyleSheet.css" text=" " textFill="WHITE" />
+                <JFXButton fx:id="p2" alignment="CENTER" layoutX="302.0" layoutY="9.0" onAction="#pause" prefHeight="39.0" prefWidth="73.0" style="-fx-background-color: #30303d;" stylesheets="@StyleSheet.css" text=" " textFill="WHITE" />
+                <JFXButton fx:id="p3" alignment="TOP_CENTER" layoutX="390.0" layoutY="8.0" onAction="#stop" prefHeight="39.0" prefWidth="73.0" style="-fx-background-color: #30303d;" stylesheets="@StyleSheet.css" text="     " textFill="WHITE" />
+                <Label layoutX="12.0" layoutY="16.0" prefHeight="21.0" prefWidth="215.0" text="Email Scam &amp; Phishing :" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="18.0" />
+                    </font>
+                </Label>
+                <Label layoutX="13.0" layoutY="94.0" prefHeight="21.0" prefWidth="215.0" text="ईमेल स्कैम और फ़िशिंग :" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="18.0" />
+                    </font>
+                </Label>
+                <FontAwesomeIcon fill="#ffc100" glyphName="PAUSE" layoutX="332.0" layoutY="32.0" text="" />
+                <FontAwesomeIcon fill="#00ff10" glyphName="PLAY" layoutX="249.0" layoutY="34.0" />
+                <FontAwesomeIcon fill="RED" glyphName="STOP" layoutX="420.0" layoutY="32.0" />
+                <JFXButton fx:id="ph1" alignment="CENTER" layoutX="216.0" layoutY="89.0" onAction="#playh" prefHeight="39.0" prefWidth="73.0" style="-fx-background-color: #30303d;" stylesheets="@StyleSheet.css" text=" " textFill="WHITE" />
+                <JFXButton fx:id="ph2" alignment="CENTER" layoutX="300.0" layoutY="88.0" onAction="#pauseh" prefHeight="39.0" prefWidth="73.0" style="-fx-background-color: #30303d;" stylesheets="@StyleSheet.css" text=" " textFill="WHITE" />
+                <JFXButton fx:id="ph3" alignment="TOP_CENTER" layoutX="388.0" layoutY="87.0" onAction="#stoph" prefHeight="39.0" prefWidth="73.0" style="-fx-background-color: #30303d;" stylesheets="@StyleSheet.css" text="     " textFill="WHITE" />
+                <FontAwesomeIcon fill="#ffc100" glyphName="PAUSE" layoutX="332.0" layoutY="113.0" text="" />
+                <FontAwesomeIcon fill="#00ff10" glyphName="PLAY" layoutX="249.0" layoutY="113.0" />
+                <FontAwesomeIcon fill="RED" glyphName="STOP" layoutX="418.0" layoutY="113.0" text="" />
+            </children>
+        </Pane>
+        <Label alignment="CENTER" layoutX="558.0" layoutY="561.0" prefHeight="39.0" prefWidth="186.0" text="Media Gallery" textFill="WHITE">
+            <font>
+                <Font size="27.0" />
+            </font>
+        </Label>
+        <Separator layoutX="485.0" layoutY="573.0" prefHeight="21.0" prefWidth="73.0" />
+        <Separator layoutX="744.0" layoutY="573.0" prefHeight="21.0" prefWidth="73.0" />
+        <Pane layoutX="768.0" layoutY="600.0" prefHeight="136.0" prefWidth="474.0" style="-fx-border-color: #30303d; -fx-border-radius: 25px;" stylesheets="@StyleSheet.css">
+            <children>
+                <JFXButton fx:id="a1" alignment="CENTER" layoutX="218.0" layoutY="10.0" onAction="#aplay" prefHeight="39.0" prefWidth="73.0" style="-fx-background-color: #30303d;" stylesheets="@StyleSheet.css" text=" " textFill="WHITE" />
+                <JFXButton fx:id="a2" alignment="CENTER" layoutX="302.0" layoutY="9.0" onAction="#apause" prefHeight="39.0" prefWidth="73.0" style="-fx-background-color: #30303d;" stylesheets="@StyleSheet.css" text=" " textFill="WHITE" />
+                <JFXButton fx:id="a3" alignment="TOP_CENTER" layoutX="390.0" layoutY="8.0" onAction="#astop" prefHeight="39.0" prefWidth="73.0" style="-fx-background-color: #30303d;" stylesheets="@StyleSheet.css" text="     " textFill="WHITE" />
+                <Label layoutX="12.0" layoutY="16.0" prefHeight="21.0" prefWidth="215.0" text="Identity Theft :" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="18.0" />
+                    </font>
+                </Label>
+                <Label layoutX="13.0" layoutY="94.0" prefHeight="21.0" prefWidth="215.0" text="पहचान की चोरी :" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="18.0" />
+                    </font>
+                </Label>
+                <FontAwesomeIcon fill="#ffc100" glyphName="PAUSE" layoutX="332.0" layoutY="32.0" text="" />
+                <FontAwesomeIcon fill="#00ff10" glyphName="PLAY" layoutX="249.0" layoutY="34.0" />
+                <FontAwesomeIcon fill="RED" glyphName="STOP" layoutX="420.0" layoutY="32.0" />
+                <JFXButton fx:id="ah1" alignment="CENTER" layoutX="216.0" layoutY="89.0" onAction="#aplayh" prefHeight="39.0" prefWidth="73.0" style="-fx-background-color: #30303d;" stylesheets="@StyleSheet.css" text=" " textFill="WHITE" />
+                <JFXButton fx:id="ah2" alignment="CENTER" layoutX="300.0" layoutY="88.0" onAction="#apauseh" prefHeight="39.0" prefWidth="73.0" style="-fx-background-color: #30303d;" stylesheets="@StyleSheet.css" text=" " textFill="WHITE" />
+                <JFXButton fx:id="ah3" alignment="TOP_CENTER" layoutX="388.0" layoutY="87.0" onAction="#astoph" prefHeight="39.0" prefWidth="73.0" style="-fx-background-color: #30303d;" stylesheets="@StyleSheet.css" text="     " textFill="WHITE" />
+                <FontAwesomeIcon fill="#ffc100" glyphName="PAUSE" layoutX="332.0" layoutY="113.0" text="" />
+                <FontAwesomeIcon fill="#00ff10" glyphName="PLAY" layoutX="249.0" layoutY="113.0" />
+                <FontAwesomeIcon fill="RED" glyphName="STOP" layoutX="418.0" layoutY="113.0" text="" />
+            </children>
+        </Pane>
+        <Pane layoutX="60.0" layoutY="750.0" prefHeight="136.0" prefWidth="474.0" style="-fx-border-color: #30303d; -fx-border-radius: 25px;" stylesheets="@StyleSheet.css">
+            <children>
+                <JFXButton fx:id="b1" alignment="CENTER" layoutX="218.0" layoutY="10.0" onAction="#bplay" prefHeight="39.0" prefWidth="73.0" style="-fx-background-color: #30303d;" stylesheets="@StyleSheet.css" text=" " textFill="WHITE" />
+                <JFXButton fx:id="b2" alignment="CENTER" layoutX="302.0" layoutY="9.0" onAction="#bpause" prefHeight="39.0" prefWidth="73.0" style="-fx-background-color: #30303d;" stylesheets="@StyleSheet.css" text=" " textFill="WHITE" />
+                <JFXButton fx:id="b3" alignment="TOP_CENTER" layoutX="390.0" layoutY="8.0" onAction="#bstop" prefHeight="39.0" prefWidth="73.0" style="-fx-background-color: #30303d;" stylesheets="@StyleSheet.css" text="     " textFill="WHITE" />
+                <Label layoutX="12.0" layoutY="16.0" prefHeight="21.0" prefWidth="215.0" text="Obscene Content :" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="18.0" />
+                    </font>
+                </Label>
+                <Label layoutX="13.0" layoutY="94.0" prefHeight="21.0" prefWidth="215.0" text="अश्लील सामग्री :" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="18.0" />
+                    </font>
+                </Label>
+                <FontAwesomeIcon fill="#ffc100" glyphName="PAUSE" layoutX="332.0" layoutY="32.0" text="" />
+                <FontAwesomeIcon fill="#00ff10" glyphName="PLAY" layoutX="249.0" layoutY="34.0" />
+                <FontAwesomeIcon fill="RED" glyphName="STOP" layoutX="420.0" layoutY="32.0" />
+                <JFXButton fx:id="bh1" alignment="CENTER" layoutX="216.0" layoutY="89.0" onAction="#bplayh" prefHeight="39.0" prefWidth="73.0" style="-fx-background-color: #30303d;" stylesheets="@StyleSheet.css" text=" " textFill="WHITE" />
+                <JFXButton fx:id="bh2" alignment="CENTER" layoutX="300.0" layoutY="88.0" onAction="#bpauseh" prefHeight="39.0" prefWidth="73.0" style="-fx-background-color: #30303d;" stylesheets="@StyleSheet.css" text=" " textFill="WHITE" />
+                <JFXButton fx:id="bh3" alignment="TOP_CENTER" layoutX="388.0" layoutY="87.0" onAction="#bstoph" prefHeight="39.0" prefWidth="73.0" style="-fx-background-color: #30303d;" stylesheets="@StyleSheet.css" text="     " textFill="WHITE" />
+                <FontAwesomeIcon fill="#ffc100" glyphName="PAUSE" layoutX="332.0" layoutY="113.0" text="" />
+                <FontAwesomeIcon fill="#00ff10" glyphName="PLAY" layoutX="249.0" layoutY="113.0" />
+                <FontAwesomeIcon fill="RED" glyphName="STOP" layoutX="418.0" layoutY="113.0" text="" />
+            </children>
+        </Pane>
+        <Pane layoutX="769.0" layoutY="750.0" prefHeight="136.0" prefWidth="474.0" style="-fx-border-color: #30303d; -fx-border-radius: 25px;" stylesheets="@StyleSheet.css">
+            <children>
+                <JFXButton fx:id="c1" alignment="CENTER" layoutX="218.0" layoutY="10.0" onAction="#cplay" prefHeight="39.0" prefWidth="73.0" style="-fx-background-color: #30303d;" stylesheets="@StyleSheet.css" text=" " textFill="WHITE" />
+                <JFXButton fx:id="c2" alignment="CENTER" layoutX="302.0" layoutY="9.0" onAction="#cpause" prefHeight="39.0" prefWidth="73.0" style="-fx-background-color: #30303d;" stylesheets="@StyleSheet.css" text=" " textFill="WHITE" />
+                <JFXButton fx:id="c3" alignment="TOP_CENTER" layoutX="390.0" layoutY="8.0" onAction="#cstop" prefHeight="39.0" prefWidth="73.0" style="-fx-background-color: #30303d;" stylesheets="@StyleSheet.css" text="     " textFill="WHITE" />
+                <Label layoutX="12.0" layoutY="16.0" prefHeight="21.0" prefWidth="215.0" text="Cyber Bullying :" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="18.0" />
+                    </font>
+                </Label>
+                <Label layoutX="13.0" layoutY="94.0" prefHeight="21.0" prefWidth="215.0" text="साइबर बदमाशी :" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="18.0" />
+                    </font>
+                </Label>
+                <FontAwesomeIcon fill="#ffc100" glyphName="PAUSE" layoutX="332.0" layoutY="32.0" text="" />
+                <FontAwesomeIcon fill="#00ff10" glyphName="PLAY" layoutX="249.0" layoutY="34.0" />
+                <FontAwesomeIcon fill="RED" glyphName="STOP" layoutX="420.0" layoutY="32.0" />
+                <JFXButton fx:id="ch1" alignment="CENTER" layoutX="216.0" layoutY="89.0" onAction="#cplayh" prefHeight="39.0" prefWidth="73.0" style="-fx-background-color: #30303d;" stylesheets="@StyleSheet.css" text=" " textFill="WHITE" />
+                <JFXButton fx:id="ch2" alignment="CENTER" layoutX="300.0" layoutY="88.0" onAction="#cpauseh" prefHeight="39.0" prefWidth="73.0" style="-fx-background-color: #30303d;" stylesheets="@StyleSheet.css" text=" " textFill="WHITE" />
+                <JFXButton fx:id="ch3" alignment="TOP_CENTER" layoutX="388.0" layoutY="87.0" onAction="#cstoph" prefHeight="39.0" prefWidth="73.0" style="-fx-background-color: #30303d;" stylesheets="@StyleSheet.css" text="     " textFill="WHITE" />
+                <FontAwesomeIcon fill="#ffc100" glyphName="PAUSE" layoutX="332.0" layoutY="113.0" text="" />
+                <FontAwesomeIcon fill="#00ff10" glyphName="PLAY" layoutX="249.0" layoutY="113.0" />
+                <FontAwesomeIcon fill="RED" glyphName="STOP" layoutX="418.0" layoutY="113.0" text="" />
+            </children>
+        </Pane>
+    </children>
+</AnchorPane>

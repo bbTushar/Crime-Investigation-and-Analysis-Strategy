@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="acpane" prefHeight="733.0" prefWidth="1289.0" style="-fx-background-color: #000000;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tushar.cias_btushar.AddComplaintHomeController">
+    <children>
+        <Pane layoutX="66.0" layoutY="83.0" prefHeight="442.0" prefWidth="1157.0" style="-fx-border-color: #66fcf1; -fx-border-radius: 20px;">
+            <children>
+                <Label alignment="TOP_CENTER" layoutX="117.0" layoutY="30.0" prefHeight="21.0" prefWidth="924.0" style="-fx-text-fill: #c3073f;" text="Filing A Complaint On CIAS Reporting Portal" textFill="WHITE" underline="true">
+                    <font>
+                        <Font name="Arial" size="30.0" />
+                    </font>
+                </Label>
+                <Label alignment="TOP_CENTER" layoutX="88.0" layoutY="94.0" prefHeight="174.0" prefWidth="986.0" style="-fx-text-fill: #ffffff;" text="This portal is an initiative of CIAS System to facilitate victims/complainants to report general and cyber crime complaints online. This portal caters to complaints pertaining to crimes only with special focus on crimes against women and children. Complaints reported on this portal are not dealt by law enforcement agencies/ police based on the information available in the complaints. It is imperative to provide correct and accurate details while filing complaint for prompt action." textAlignment="JUSTIFY" textFill="WHITE" wrapText="true">
+                    <font>
+                        <Font name="Arial" size="20.0" />
+                    </font>
+                </Label>
+                <Label alignment="TOP_CENTER" layoutX="88.0" layoutY="257.0" prefHeight="95.0" prefWidth="986.0" style="-fx-text-fill: #ffffff;" text="Please contact local police in case of an emergency or for reporting crimes other than cyber crimes. National police helpline number is 100. National women helpline number is 181." textAlignment="JUSTIFY" textFill="WHITE" wrapText="true">
+                    <font>
+                        <Font name="Arial" size="20.0" />
+                    </font>
+                </Label>
+                <JFXButton layoutX="88.0" layoutY="352.0" onAction="#learn" prefHeight="50.0" prefWidth="209.0" styleClass="complaint" stylesheets="@StyleSheet.css" text="Learn more about Crime" textFill="WHITE" />
+                <JFXButton fx:id="fileCompl" layoutX="927.0" layoutY="352.0" onAction="#openFile" prefHeight="50.0" prefWidth="147.0" styleClass="complaint" stylesheets="@StyleSheet.css" text="File a Complaint" textFill="WHITE" />
+            </children>
+        </Pane>
+    </children>
+</AnchorPane>

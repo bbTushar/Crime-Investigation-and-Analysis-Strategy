@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="733.0" prefWidth="1289.0" style="-fx-background-color: #000000;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tushar.cias_btushar.FinalLoadingController">
+    <children>
+        <ImageView fx:id="imageView" fitHeight="179.0" fitWidth="231.0" layoutX="394.0" layoutY="242.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../image/finalLoad.gif" />
+            </image>
+        </ImageView>
+        <Label fx:id="label" layoutX="573.0" layoutY="290.0" prefHeight="82.0" prefWidth="391.0" text="Your Complaint is getting Registered. Please wait..." textFill="WHITE" wrapText="true">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>

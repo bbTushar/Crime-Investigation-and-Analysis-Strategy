@@ -1,0 +1,66 @@
+<!-- Styles -->
+<style>
+body { background-color: #000000; color: #fff; }
+#chartdiv {
+  width: 90%;
+  height: 90%;
+font-size:1.1em;
+}
+
+</style>
+
+<!-- Resources -->
+<script src="https://www.amcharts.com/lib/4/core.js"></script>
+<script src="https://www.amcharts.com/lib/4/charts.js"></script>
+<script src="https://www.amcharts.com/lib/4/themes/dark.js"></script>
+<script src="https://www.amcharts.com/lib/4/themes/animated.js"></script>
+
+<!-- Chart code -->
+<script>
+am4core.ready(function() {
+
+// Themes begin
+am4core.useTheme(am4themes_dark);
+am4core.useTheme(am4themes_animated);
+// Themes end
+
+var chart = am4core.create("chartdiv", am4charts.PieChart3D);
+chart.hiddenState.properties.opacity = 0; // this creates initial fade-in
+
+chart.data = [
+  {
+    country: "Robbery",
+    litres: 36.2
+  },
+  {
+    country: "Rape",
+    litres: 22.7
+  },
+  {
+    country: "Assaults",
+    litres: 34.3
+  },
+  {
+    country: "Murder",
+    litres: 6.8
+  },
+  
+];
+
+chart.innerRadius = am4core.percent(40);
+chart.depth = 80;
+
+chart.legend = new am4charts.Legend();
+
+var series = chart.series.push(new am4charts.PieSeries3D());
+series.dataFields.value = "litres";
+series.dataFields.depthValue = "litres";
+series.dataFields.category = "country";
+series.slices.template.cornerRadius = 5;
+series.colors.step = 3;
+
+}); // end am4core.ready()
+</script>
+
+<!-- HTML -->
+<div id="chartdiv"></div>

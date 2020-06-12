@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="acpane" prefHeight="733.0" prefWidth="1289.0" style="-fx-background-color: #000000;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tushar.cias_btushar.BeforeComplaintController">
+    <children>
+        <Pane layoutX="702.0" layoutY="82.0" prefHeight="467.0" prefWidth="534.0" style="-fx-border-color: #66fcf1; -fx-border-radius: 60px;">
+            <children>
+                <ImageView fitHeight="280.0" fitWidth="454.0" layoutX="56.0" layoutY="71.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../image/cyber.jpg" />
+                    </image>
+                </ImageView>
+                <Label alignment="TOP_CENTER" layoutX="57.0" layoutY="344.0" prefHeight="21.0" prefWidth="421.0" text="Report Other Cyber Crime" textFill="WHITE">
+                    <font>
+                        <Font size="24.0" />
+                    </font>
+                </Label>
+                <JFXButton layoutX="162.0" layoutY="389.0" onAction="#reportWomen" prefHeight="50.0" prefWidth="209.0" styleClass="complaint" stylesheets="@StyleSheet.css" text="Report &gt;&gt;" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="15.0" />
+                    </font>
+                </JFXButton>
+            </children>
+        </Pane>
+        <Pane layoutX="54.0" layoutY="82.0" prefHeight="467.0" prefWidth="534.0" style="-fx-border-color: #66fcf1; -fx-border-radius: 60px;">
+            <children>
+                <ImageView fitHeight="287.0" fitWidth="464.0" layoutX="46.0" layoutY="55.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../image/women.jpg" />
+                    </image>
+                </ImageView>
+                <Label layoutX="57.0" layoutY="344.0" prefHeight="21.0" prefWidth="421.0" text="Report Crime Related To Women/Child" textFill="WHITE">
+                    <font>
+                        <Font size="24.0" />
+                    </font>
+                </Label>
+                <JFXButton fx:id="report" layoutX="28.0" layoutY="389.0" onAction="#reportWomen" prefHeight="50.0" prefWidth="155.0" styleClass="complaint" stylesheets="@StyleSheet.css" text="Report &gt;&gt;" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="15.0" />
+                    </font>
+                </JFXButton>
+                <JFXButton layoutX="315.0" layoutY="389.0" onAction="#reportWomen" prefHeight="50.0" prefWidth="195.0" styleClass="complaint" stylesheets="@StyleSheet.css" text="Report  &amp; Track &gt;&gt;" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="15.0" />
+                    </font>
+                </JFXButton>
+            </children>
+        </Pane>
+    </children>
+</AnchorPane>

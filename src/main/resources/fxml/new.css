@@ -1,0 +1,89 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/*
+    Created on : Feb 19, 2020, 11:13:26 AM
+    Author     : Tushar
+*/
+
+/*.button{
+    -fx-background-color: linear-gradient(to right top, #d22121, #de5e00, #db9000, #cabf00, #a8eb12);
+     -fx-background-radius: 5px;
+
+}*/
+.button:hover {
+    -fx-background-color: #000000;
+
+    -fx-border-color: #ff0000;
+    -fx-text-fill: #ff0000;
+    -fx-font-size: 22px;
+
+}
+
+.a1{
+    -fx-background-color: #ff0000;
+}
+.a2{
+    -fx-background-color: #ff6500;
+}
+.a3{
+    -fx-background-color: #ff8900;
+}
+.a4{
+    -fx-background-color: #ffba00;
+}
+.a5{
+    -fx-background-color: #ffde00;
+}
+.a6{
+    -fx-background-color: #7eff00;
+}
+.a7{
+    -fx-background-color: #000f81;
+}
+.a8{
+    -fx-background-color: #00f7ff;
+}
+.a9{
+    -fx-background-color: #000cff;
+}
+.a10{
+    -fx-background-color: #009aff;
+}
+.a11{
+    -fx-background-color: #007aff;
+}
+.a12{
+    -fx-background-color: #0035ff;
+}
+.a13{
+    -fx-background-color: #5900ff;
+}
+.a14{
+    -fx-background-color: #b200ff;
+}
+.a15{
+    -fx-background-color: #ff00b7;
+}
+.a16{
+    -fx-background-color: #ff006a;
+}
+.a17{
+    -fx-background-color: #ff0041;
+}
+.a18{
+    -fx-background-color: #8d1a30;
+}
+.a19{
+    -fx-background-color: #638d18;
+}
+.a20{
+    -fx-background-color: #30303d;
+}
+.saja
+{
+
+    -fx-background-color:  linear-gradient(to right top, #5a0a0a, #73090c, #8d070c, #a7050a, #c10404);
+}

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="1300.0" style="-fx-background-color: #000000;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tushar.cias_btushar.FXMLHotNewsController">
+    <children>
+        <AnchorPane layoutX="14.0" layoutY="61.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <ImageView fx:id="img1" fitHeight="383.0" fitWidth="511.0" layoutX="354.0" layoutY="133.0" pickOnBounds="true" preserveRatio="true" />
+                <Label fx:id="h1" alignment="CENTER" layoutX="139.0" layoutY="14.0" prefHeight="130.0" prefWidth="1024.0" text="Hey This is Tushar Bharat Badewale you are seeing this web vie on CIAS 2020." textFill="RED" wrapText="true">
+                    <font>
+                        <Font size="30.0" />
+                    </font>
+                </Label>
+                <JFXButton fx:id="next" layoutX="954.0" layoutY="293.0" onAction="#next" prefHeight="63.0" prefWidth="152.0" text="Next &gt;" textFill="WHITE">
+                    <font>
+                        <Font size="24.0" />
+                    </font>
+                </JFXButton>
+                <JFXButton fx:id="back" layoutX="114.0" layoutY="293.0" onAction="#back" prefHeight="63.0" prefWidth="152.0" text="&lt; Previous" textFill="WHITE">
+                    <font>
+                        <Font size="24.0" />
+                    </font>
+                </JFXButton>
+                <Label alignment="CENTER" layoutX="1166.0" layoutY="839.0" prefHeight="21.0" prefWidth="75.0" text="CIAS News" textFill="RED" />
+                <Label fx:id="content1" alignment="TOP_CENTER" layoutX="235.0" layoutY="483.0" prefHeight="316.0" prefWidth="831.0" text="jdbasdbsahkd odhasdh saoudh uosadh h asasdhasuodhsasud hhawudh asudhasd as daw" textAlignment="JUSTIFY" textFill="WHITE" wrapText="true">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>

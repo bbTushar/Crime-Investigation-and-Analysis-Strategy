@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="690.0" prefWidth="1230.0" style="-fx-background-color: #000000;" stylesheets="@StyleSheet.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+
+        <ImageView fitHeight="581.0" fitWidth="690.0" layoutX="325.0" layoutY="44.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../image/C.I.A.S%202.png" />
+            </image>
+        </ImageView>
+        <Label alignment="TOP_CENTER" layoutX="89.0" layoutY="44.0" prefHeight="83.0" prefWidth="1053.0" text="&quot;What chances do Crime &amp; Corruption have when technology unites the forces of goods.&quot;" textFill="WHITE">
+            <font>
+                <Font size="25.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>

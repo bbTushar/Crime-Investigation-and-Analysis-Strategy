@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="683.0" prefWidth="945.0" style="-fx-background-color: #000000;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tushar.cias_btushar.ClimaxController">
+    <children>
+        <Label fx:id="d1" alignment="TOP_CENTER" layoutX="314.0" layoutY="362.0" prefHeight="43.0" prefWidth="317.0" text="Developed By " textFill="WHITE">
+            <font>
+                <Font size="29.0" />
+            </font>
+        </Label>
+        <Label fx:id="a1" alignment="TOP_CENTER" layoutX="314.0" layoutY="217.0" prefHeight="32.0" prefWidth="317.0" text="Guided By " textFill="WHITE">
+            <font>
+                <Font size="29.0" />
+            </font>
+        </Label>
+        <Pane layoutX="89.0" layoutY="448.0" prefWidth="892.0">
+            <children>
+                <Label fx:id="tus1" layoutX="82.0" prefHeight="21.0" prefWidth="296.0" text="Tushar B. Badewale" textFill="RED">
+                    <font>
+                        <Font size="24.0" />
+                    </font>
+                </Label>
+                <Label fx:id="udd1" layoutX="82.0" layoutY="117.0" prefHeight="21.0" prefWidth="296.0" text="Uddesh B. Jain" textFill="RED">
+                    <font>
+                        <Font size="24.0" />
+                    </font>
+                </Label>
+                <Label fx:id="vin1" layoutX="597.0" prefHeight="21.0" prefWidth="296.0" text="Vinaya Bhat" textFill="RED">
+                    <font>
+                        <Font size="24.0" />
+                    </font>
+                </Label>
+                <Label fx:id="vais1" layoutX="597.0" layoutY="117.0" prefHeight="21.0" prefWidth="296.0" text="Vaishnavi S. Dumrey" textFill="RED">
+                    <font>
+                        <Font size="24.0" />
+                    </font>
+                </Label>
+                <Label fx:id="tus3" layoutX="82.0" layoutY="54.0" prefHeight="8.0" prefWidth="241.0" text="B.E Computer Technology" textFill="WHITE">
+                    <font>
+                        <Font size="17.0" />
+                    </font>
+                </Label>
+                <Label fx:id="tus2" layoutX="82.0" layoutY="35.0" prefHeight="21.0" prefWidth="241.0" text="Final Year " textFill="WHITE">
+                    <font>
+                        <Font size="17.0" />
+                    </font>
+                </Label>
+                <Label fx:id="vin3" layoutX="597.0" layoutY="58.0" prefHeight="8.0" prefWidth="241.0" text="B.E Computer Technology" textFill="WHITE">
+                    <font>
+                        <Font size="17.0" />
+                    </font>
+                </Label>
+                <Label fx:id="vin2" layoutX="597.0" layoutY="39.0" prefHeight="21.0" prefWidth="241.0" text="Final Year " textFill="WHITE">
+                    <font>
+                        <Font size="17.0" />
+                    </font>
+                </Label>
+                <Label fx:id="udd3" layoutX="82.0" layoutY="171.0" prefHeight="8.0" prefWidth="241.0" text="B.E Computer Technology" textFill="WHITE">
+                    <font>
+                        <Font size="17.0" />
+                    </font>
+                </Label>
+                <Label fx:id="udd2" layoutX="82.0" layoutY="152.0" prefHeight="21.0" prefWidth="241.0" text="Final Year " textFill="WHITE">
+                    <font>
+                        <Font size="17.0" />
+                    </font>
+                </Label>
+                <Label fx:id="vais3" layoutX="597.0" layoutY="175.0" prefHeight="8.0" prefWidth="241.0" text="B.E Computer Technology" textFill="WHITE">
+                    <font>
+                        <Font size="17.0" />
+                    </font>
+                </Label>
+                <Label fx:id="vais2" layoutX="597.0" layoutY="156.0" prefHeight="21.0" prefWidth="241.0" text="Final Year " textFill="WHITE">
+                    <font>
+                        <Font size="17.0" />
+                    </font>
+                </Label>
+                <ImageView fx:id="tus0" fitHeight="71.0" fitWidth="69.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../image/tussuphoto.jpg" />
+                    </image>
+                </ImageView>
+                <ImageView fx:id="udd0" fitHeight="71.0" fitWidth="69.0" layoutY="118.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../image/uddessphoto.jpg" />
+                    </image>
+                </ImageView>
+                <ImageView fx:id="vin0" fitHeight="71.0" fitWidth="69.0" layoutX="510.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../image/vinayaphoto.jpg" />
+                    </image>
+                </ImageView>
+                <ImageView fx:id="vais0" fitHeight="71.0" fitWidth="69.0" layoutX="510.0" layoutY="131.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../image/vaishuphotu.jpg" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="113.0" fitWidth="200.0" layoutX="288.0" layoutY="29.0" opacity="0.71" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../image/logo.png" />
+                    </image>
+                </ImageView>
+            </children>
+        </Pane>
+        <Label fx:id="a3" layoutX="335.0" layoutY="271.0" prefHeight="35.0" prefWidth="276.0" text="Prof. Abhishek Nachankar" textFill="RED">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </Label>
+        <Label fx:id="a4" layoutX="352.0" layoutY="306.0" prefHeight="8.0" prefWidth="241.0" text="Computer Technology @KDKCE" textFill="WHITE">
+            <font>
+                <Font size="17.0" />
+            </font>
+        </Label>
+        <Separator fx:id="a2" layoutX="373.0" layoutY="253.0" prefHeight="14.0" prefWidth="200.0" />
+        <Separator fx:id="d2" layoutX="340.0" layoutY="398.0" prefHeight="14.0" prefWidth="266.0" />
+        <Label fx:id="text" alignment="TOP_CENTER" layoutX="48.0" layoutY="14.0" prefHeight="183.0" prefWidth="870.0" text="“When a man is denied the right to live the life he believes in, he has no choice but to become an outlaw.” ― Nelson Mandela" textFill="#00ff10" wrapText="true">
+            <font>
+                <Font name="Ink Free" size="27.0" />
+            </font>
+        </Label>
+        <JFXButton fx:id="exit" buttonType="RAISED" layoutX="373.0" layoutY="152.0" onAction="#exitApp" prefHeight="31.0" prefWidth="200.0" style="-fx-background-color: #ff0000;" text="Quit" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+        </JFXButton>
+        <JFXButton layoutX="432.0" layoutY="191.0" onAction="#logOut" text="or Log Out ?" textFill="#655c5c" />
+    </children>
+</AnchorPane>

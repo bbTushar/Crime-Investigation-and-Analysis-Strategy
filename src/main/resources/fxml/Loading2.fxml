@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="1280.0" style="-fx-background-color: #000000" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tushar.cias_btushar.Loading2Controller">
+    <children>
+        <ImageView fx:id="img" fitHeight="540.0" fitWidth="681.0" layoutX="289.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../image/dr5.gif" />
+            </image>
+        </ImageView>
+        <Label fx:id="lbl" alignment="TOP_CENTER" layoutX="360.0" layoutY="526.0" prefHeight="26.0" prefWidth="539.0" text="Switching into Full Screen Mode" textFill="WHITE" wrapText="true">
+            <font>
+                <Font size="23.0" />
+            </font>
+        </Label>
+        <Label fx:id="lbl1" alignment="TOP_CENTER" layoutX="519.0" layoutY="492.0" prefHeight="26.0" prefWidth="221.0" text="Please Wait..." textFill="WHITE" wrapText="true">
+            <font>
+                <Font size="23.0" />
+            </font>
+        </Label>
+        <Label fx:id="lbl2" alignment="TOP_CENTER" layoutX="371.0" layoutY="58.0" prefHeight="26.0" prefWidth="539.0" text="Dashboard requires full screen to load" textFill="WHITE" wrapText="true">
+            <font>
+                <Font size="23.0" />
+            </font>
+        </Label>
+        <ImageView fitHeight="138.0" fitWidth="119.0" layoutX="570.0" layoutY="402.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../image/discord.gif" />
+            </image>
+        </ImageView>
+    </children>
+</AnchorPane>

@@ -1,0 +1,286 @@
+<!-- Styles -->
+<style>
+body { background-color: #000000; color: #fff; }
+#chartdiv {
+
+  width: 100%;
+height:900px;
+max-width:100%;
+}
+</style>
+
+<!-- Resources -->
+<script src="https://www.amcharts.com/lib/4/core.js"></script>
+<script src="https://www.amcharts.com/lib/4/charts.js"></script>
+<script src="https://www.amcharts.com/lib/4/plugins/forceDirected.js"></script>
+<script src="https://www.amcharts.com/lib/4/themes/dark.js"></script>
+<script src="https://www.amcharts.com/lib/4/themes/animated.js"></script>
+
+<!-- Chart code -->
+<script>
+am4core.ready(function() {
+
+// Themes begin
+am4core.useTheme(am4themes_dark);
+am4core.useTheme(am4themes_animated);
+// Themes end
+
+
+
+var chart = am4core.create("chartdiv", am4plugins_forceDirected.ForceDirectedTree);
+var networkSeries = chart.series.push(new am4plugins_forceDirected.ForceDirectedSeries())
+
+chart.data = [
+  {
+    name: "World",
+    children: [
+      {
+        name: "Venezuela",
+        children: [
+          {
+            name: "Lara",
+            children: [
+              { name: "Crespo", value: 8130 },
+              { name: "Iribarren", value: 4187 },
+              { name: "Moran", value: 3155 }
+            ]
+          },
+          { name: "Carabobo",
+            children: [
+              { name: "Mariara", value: 1130 },
+              { name: "bejuma", value: 587 },
+              { name: "Guacara", value: 555 }
+            ]
+          },          {
+            name: "Amazonas", children: [
+              { name: "La Esmeralda", value: 553 },
+              { name: "Isla Raton", value: 530 }
+            ]
+          },
+          { name: "Caracas", value: 526 }
+        ]
+      },
+      {
+        name: "U.S.A",
+        children: [
+          {
+            name: "Alabama",
+            children: [
+              { name: "Black", value: 3330 },
+              { name: "Columbia", value: 3187 },
+              { name: "Eva", value: 3155 }
+            ]
+          },
+          { name: "Alaska",
+            children: [
+              { name: "Anchorage", value: 2130 },
+              { name: "buckland", value: 2187 },
+              { name: "bettles", value: 255 }
+            ]
+          },          {
+            name: "Louisiana", children: [
+              { name: "New Orleans", value: 553 },
+              
+            ]
+          },
+          { name: "Washington,D.C", value: 126 }
+        ]
+      },
+      {
+        name: "India",
+        children: [
+          {
+            name: "U.P",
+            children: [
+              { name: "Lucknow", value: 3130 },
+              { name: "Kanpur", value: 4187 },
+              { name: "Ghaziabad", value: 1155 }
+            ]
+          },
+          
+          {
+            name: "Maharashtra", children: [
+              { name: "Nagpur", value: 153 },
+              { name: "Mumbai", value: 160 },
+	      { name: "Yavatmal", value: 140 },
+	       { name: "Wardha", value: 130 },
+            ]
+          },
+         {
+            name: "Kerala", children: [
+              { name: "Ernakulam", value: 153 },
+              { name: "Thrissur", value: 142 },
+              { name: "Kollam", value: 137 }
+            ]
+          },
+          {
+            name: "M.P", children: [
+              { name: "Indore", value: 53 },
+              { name: "Bhopal", value: 30 },
+              { name: "Gwalior", value: 30 }
+            ]
+          },
+          { name: "Delhi", value: 5560 }
+        ]
+      },
+      {
+        name: "Brazil",
+        children: [
+          {
+            name: "Alagoas",
+            children: [
+              { name: "Maceio", value: 5300 },
+              { name: "Palmeria", value: 4487 },
+              { name: "Rio", value: 555 }
+            ]
+          },
+          { name: "Espirito Santo",
+            children: [
+              { name: "Serra", value: 1130 },
+              { name: "Cariacica", value: 887 },
+              { name: "Colatina", value: 555 }
+            ]
+          },          {
+            name: "Ceara", children: [
+              { name: "Russas", value: 1153 },
+              
+            ]
+          },
+          { name: "Brasilia", value: 1126 }
+        ]
+      },
+      {
+        name: "U.K",
+        children: [
+          {
+            name: "England",
+            value: 9949
+          },
+          {
+            name: "Scotland",
+            value: 1148
+          }
+        ]
+      },
+     {
+        name: "Germany",
+        children: [
+          {
+            name: "Berlin",
+            children: [
+              { name: "Hamburg", value: 9130 },
+              { name: "Halle", value: 1187 },
+              { name: "Kiel", value: 4155 }
+            ]
+          },
+          
+          {
+            name: "Saxony", children: [
+              { name: "Bautzen", value: 2253 },
+              { name: "Leipzig", value: 2230 }
+            ]
+          },
+          { name: "Frankfrut", value: 1126 }
+        ]
+      },
+      {
+        name: "Belgium",
+        children: [
+          {
+            name: "Flander",
+            children: [
+              { name: "Limburg", value: 1130 }
+                         ]
+          },
+          { name: "Wallonia", value: 1148 },
+          
+          { name: "Brussels", value: 5926 }
+        ]
+      },
+      {
+        name: "Sweden",
+        children: [
+          
+          { name: "Halland", value: 9148 },
+          { name: "Dalarna", value: 9148 },
+	  { name: "lappland", value: 1148 },
+          { name: "Narke", value: 926 }
+        ]
+      },
+      {
+        name: "France",
+        children: [
+          {
+            name: "Corsica",
+            children: [
+              { name: "Bastia", value: 9130 },
+              { name: "Cap Corse", value: 1187 },
+              { name: "Porto", value: 2255 }
+            ]
+          },
+          
+          {
+            name: "Grand Est", children: [
+              { name: "Troyes", value: 153 },
+              { name: "Epinal", value: 830 }
+            ]
+          },
+          { name: "Paris", value: 2226 }
+        ]
+      },
+      {
+        name: "Columbia",
+        children: [
+          
+          { name: "Cucuta", value: 11148 },
+          
+          { name: "Tunja", value: 9926 }
+        ]
+      }
+
+    ]
+  }
+];
+networkSeries.dataFields.value = "value";
+networkSeries.dataFields.name = "name";
+networkSeries.dataFields.size = 20;
+networkSeries.dataFields.children = "children";
+
+networkSeries.nodes.template.tooltipText = "{name}:{value}";
+networkSeries.nodes.template.fillOpacity = 1;
+
+networkSeries.nodes.template.label.text = "{name}"
+networkSeries.fontSize = 15;
+
+
+networkSeries.links.template.strokeWidth = 2;
+
+var hoverState = networkSeries.links.template.states.create("hover");
+hoverState.properties.strokeWidth = 6;
+hoverState.properties.strokeOpacity = 1;
+
+networkSeries.nodes.template.events.on("over", function(event) {
+  event.target.dataItem.childLinks.each(function(link) {
+    link.isHover = true;
+  })
+  if (event.target.dataItem.parentLink) {
+    event.target.dataItem.parentLink.isHover = true;
+  }
+
+})
+
+networkSeries.nodes.template.events.on("out", function(event) {
+  event.target.dataItem.childLinks.each(function(link) {
+    link.isHover = false;
+  })
+  if (event.target.dataItem.parentLink) {
+    event.target.dataItem.parentLink.isHover = false;
+  }
+})
+
+}); // end am4core.ready()
+</script>
+
+<!-- HTML -->
+<div id="chartdiv"></div>
+C.I.A.S

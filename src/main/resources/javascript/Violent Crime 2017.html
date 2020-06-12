@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>2016 Violent Crime | amCharts</title>
+		
+		
+		<!-- amCharts javascript sources -->
+		<script type="text/javascript" src="https://www.amcharts.com/lib/3/amcharts.js"></script>
+		<script type="text/javascript" src="https://www.amcharts.com/lib/3/pie.js"></script>
+		<script type="text/javascript" src="https://www.amcharts.com/lib/3/themes/black.js"></script>
+		
+
+		<!-- amCharts javascript code -->
+		<script type="text/javascript">
+			AmCharts.makeChart("chartdiv",
+				{
+					"type": "pie",
+					"angle": 12,
+					"balloonText": "[[title]]<br><span style='font-size:14px'><b>[[value]]</b> ([[percents]]%)</span>",
+					"depth3D": 20,
+					"innerRadius": "40%",
+					"radius": 0,
+					"colors": [
+						"#1177A7",
+						"#6011A7",
+						"#11A793",
+						"#a7a737",
+						"#86a965",
+						"#8aabb0",
+						"#69c8ff",
+						"#cfd27e",
+						"#9d9888",
+						"#916b8a",
+						"#724887",
+						"#7256bc"
+					],
+					"groupedTitle": "",
+					"tabIndex": -4,
+					"titleField": "category",
+					"valueField": "column-1",
+					"accessibleTitle": "",
+					"fontSize": 14,
+					"theme": "black",
+					"allLabels": [],
+					"balloon": {},
+					"legend": {
+						"enabled": true,
+						"align": "center",
+						"markerType": "circle"
+					},
+					"titles": [
+						{
+							"color": "#FF0000",
+							"fontSize": 24,
+							"id": "Title-1",
+							"text": "Violent Crime In 2017"
+						}
+					],
+					"dataProvider": [
+						{
+							"category": "Robbery",
+							"column-1": "26.6"
+						},
+						{
+							"category": "Rape",
+							"column-1": "7.7"
+						},
+						{
+							"category": "Aggravated  Assault",
+							"column-1": "64.3"
+						},
+						{
+							"category": "Murder",
+							"column-1": "1.4"
+						}
+					]
+				}
+			);
+		</script>
+	</head>
+	<body bgcolor="black">
+		<div id="chartdiv" style="width: 100%; height: 400px; background-color: #000000;" ></div>
+	</body>
+</html>

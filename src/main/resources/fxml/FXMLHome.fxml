@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.web.WebView?>
+
+<AnchorPane fx:id="fxmlHome" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="752.0" prefWidth="1300.0" style="-fx-background-color: #000000;" stylesheets="@StyleSheet.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tushar.cias_btushar.FXMLHomeController">
+    <children>
+        <WebView fx:id="webView" layoutY="100.0" prefHeight="800.0" prefWidth="1300.0" />
+        <JFXButton fx:id="btn" layoutX="387.0" layoutY="771.0" onAction="#gotoDashboard" prefHeight="31.0" prefWidth="562.0" ripplerFill="RED" styleClass="sdfdsf" stylesheets="@StyleSheet.css" text="Go To DASHBOARD" textFill="WHITE">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </JFXButton>
+        <Label fx:id="label2" alignment="TOP_CENTER" ellipsisString="" layoutX="387.0" layoutY="728.0" prefHeight="21.0" prefWidth="562.0" text="To Know Detail Analytics And Crime Strategies :" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="16.0" />
+            </font>
+        </Label>
+        <Label fx:id="label1" alignment="CENTER" layoutX="93.0" layoutY="50.0" prefHeight="40.0" prefWidth="1151.0" text="&quot;Roll back the clock, and every possession of every great country started with a crime.&quot;">
+            <font>
+                <Font size="28.0" />
+            </font>
+            <textFill>
+                <LinearGradient endX="1.0" endY="1.0">
+                    <stops>
+                        <Stop color="#ff1ae8e5" />
+                        <Stop color="#d0c833" offset="1.0" />
+                    </stops>
+                </LinearGradient>
+            </textFill>
+        </Label>
+    </children>
+</AnchorPane>

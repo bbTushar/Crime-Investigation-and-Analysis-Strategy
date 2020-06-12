@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="acpane" prefHeight="733.0" prefWidth="1289.0" style="-fx-background-color: #000000;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tushar.cias_btushar.ConfirmComplaintController">
+    <children>
+        <Label alignment="TOP_CENTER" layoutX="541.0" prefHeight="118.0" prefWidth="207.0" text="C.I.A.S" textFill="RED">
+            <font>
+                <Font name="Agency FB Bold" size="96.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER" layoutX="461.0" layoutY="95.0" prefHeight="60.0" prefWidth="367.0" text="CRIME INVESTIGATION AND ANALYSIS STRATEGY" textFill="#bca5a5" wrapText="true">
+            <font>
+                <Font name="System Bold" size="15.0" />
+            </font></Label>
+        <Label layoutX="22.0" layoutY="155.0" prefHeight="38.0" prefWidth="95.0" text="Mr/Mrs." textFill="WHITE">
+            <font>
+                <Font size="21.0" />
+            </font>
+        </Label>
+        <Label fx:id="name" alignment="CENTER" layoutX="100.0" layoutY="155.0" prefHeight="38.0" prefWidth="241.0" text="Tushar Bharat Badewale" textFill="RED">
+            <font>
+                <Font size="21.0" />
+            </font>
+        </Label>
+        <Label layoutX="328.0" layoutY="155.0" prefHeight="38.0" prefWidth="327.0" text="is a Victim filed a complaint under" textFill="WHITE">
+            <font>
+                <Font size="21.0" />
+            </font>
+        </Label>
+        <Label fx:id="cato" layoutX="649.0" layoutY="155.0" prefHeight="38.0" prefWidth="642.0" text="Publishing or Transmitting Sexually Obsence Material in electronic form" textFill="RED">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Label>
+        <Label layoutX="22.0" layoutY="193.0" prefHeight="38.0" prefWidth="105.0" text="- category " textFill="WHITE">
+            <font>
+                <Font size="21.0" />
+            </font>
+        </Label>
+        <Label layoutX="126.0" layoutY="193.0" prefHeight="38.0" prefWidth="9.0" text="," textFill="WHITE">
+            <font>
+                <Font size="21.0" />
+            </font>
+        </Label>
+        <Label layoutX="135.0" layoutY="193.0" prefHeight="38.0" prefWidth="225.0" text="Citizen of India living in" textFill="WHITE">
+            <font>
+                <Font size="21.0" />
+            </font>
+        </Label>
+        <Label fx:id="cCity" layoutX="360.0" layoutY="193.0" prefHeight="38.0" prefWidth="80.0" text="Nagpur" textFill="RED">
+            <font>
+                <Font size="21.0" />
+            </font>
+        </Label>
+        <Label layoutX="436.0" layoutY="193.0" prefHeight="38.0" prefWidth="9.0" text="," textFill="WHITE">
+            <font>
+                <Font size="21.0" />
+            </font>
+        </Label>
+        <Label fx:id="cDistrict" layoutX="445.0" layoutY="193.0" prefHeight="38.0" prefWidth="80.0" text="Nagpur" textFill="RED">
+            <font>
+                <Font size="21.0" />
+            </font>
+        </Label>
+        <Label layoutX="525.0" layoutY="193.0" prefHeight="38.0" prefWidth="131.0" text="district under" textFill="WHITE">
+            <font>
+                <Font size="21.0" />
+            </font>
+        </Label>
+        <Label fx:id="cState" layoutX="656.0" layoutY="193.0" prefHeight="38.0" prefWidth="131.0" text="Maharashtra" textFill="RED">
+            <font>
+                <Font size="21.0" />
+            </font>
+        </Label>
+        <Label layoutX="778.0" layoutY="193.0" prefHeight="38.0" prefWidth="9.0" text="." textFill="WHITE">
+            <font>
+                <Font size="21.0" />
+            </font>
+        </Label>
+        <Label layoutX="787.0" layoutY="193.0" prefHeight="38.0" prefWidth="499.0" text="The Police Station which comes under the victim area" textFill="WHITE">
+            <font>
+                <Font size="21.0" />
+            </font>
+        </Label>
+        <Label layoutX="22.0" layoutY="231.0" prefHeight="38.0" prefWidth="105.0" text="is in area -" textFill="WHITE">
+            <font>
+                <Font size="21.0" />
+            </font>
+        </Label>
+        <Label fx:id="cStation" layoutX="127.0" layoutY="231.0" prefHeight="38.0" prefWidth="121.0" text="Hudkeshwar" textFill="RED">
+            <font>
+                <Font size="21.0" />
+            </font>
+        </Label>
+        <Label layoutX="66.0" layoutY="294.0" prefHeight="38.0" prefWidth="796.0" text="The Supporting essential evidence for the above case is being sumitted Sucessfully." textFill="WHITE">
+            <font>
+                <Font size="21.0" />
+            </font>
+        </Label>
+        <ImageView fitHeight="50.0" fitWidth="46.0" layoutX="18.0" layoutY="288.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../image/tick.png" />
+            </image>
+        </ImageView>
+        <Label layoutX="66.0" layoutY="327.0" prefHeight="38.0" prefWidth="796.0" text="All the other essential information is filled Correctly." textFill="WHITE">
+            <font>
+                <Font size="21.0" />
+            </font>
+        </Label>
+        <ImageView fitHeight="50.0" fitWidth="46.0" layoutX="18.0" layoutY="321.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../image/tick.png" />
+            </image>
+        </ImageView>
+        <Label layoutX="65.0" layoutY="356.0" prefHeight="38.0" prefWidth="279.0" text="Date and Time of Incident is" textFill="WHITE">
+            <font>
+                <Font size="21.0" />
+            </font>
+        </Label>
+        <ImageView fitHeight="50.0" fitWidth="46.0" layoutX="17.0" layoutY="350.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../image/tick.png" />
+            </image>
+        </ImageView>
+        <Label fx:id="cDate" layoutX="341.0" layoutY="356.0" prefHeight="38.0" prefWidth="131.0" text="Nagpur" textFill="RED">
+            <font>
+                <Font size="21.0" />
+            </font>
+        </Label>
+        <Label fx:id="cTime" layoutX="473.0" layoutY="356.0" prefHeight="38.0" prefWidth="80.0" text="Nagpur" textFill="RED">
+            <font>
+                <Font size="21.0" />
+            </font>
+        </Label>
+        <Pane layoutX="43.0" layoutY="404.0" prefHeight="281.0" prefWidth="1203.0" style="-fx-border-color: #66fcf1; -fx-border-radius: 20px;">
+            <children>
+                <Label layoutX="12.0" layoutY="14.0" prefHeight="165.0" prefWidth="1179.0" text="Prior to filing a complaint with this portal, we would request you to read the below information regarding terms and conditions. Should you have queries prior to filing your complaint, view Frequently Asked Questions FAQThe information I've provided on this form is correct to the best of my knowledge. I acknowledge that providing false information could make me liable to penal actions under Indian Laws.I understand that action on the complaints reported on this portal shall be taken by concerned authorities as per Indian Laws. Please see the Privacy Policy for further information.We thank you for your cooperation." textFill="RED" wrapText="true">
+                    <font>
+                        <Font size="19.0" />
+                    </font>
+                </Label>
+                <JFXCheckBox fx:id="check" layoutX="549.0" layoutY="179.0" onAction="#checkB" prefHeight="46.0" prefWidth="105.0" text="I Accept" textFill="WHITE" unCheckedColor="WHITE">
+                    <font>
+                        <Font size="19.0" />
+                    </font>
+                </JFXCheckBox>
+                <JFXButton fx:id="submit" layoutX="549.0" layoutY="225.0" onAction="#submit" prefHeight="38.0" prefWidth="105.0" style="-fx-background-color: #00b300;" text="Submit" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="15.0" />
+                    </font>
+                </JFXButton>
+            </children>
+        </Pane>
+        <Label alignment="TOP_CENTER" layoutX="533.0" layoutY="135.0" prefHeight="21.0" prefWidth="225.0" text="Your Complaint Report" textFill="#09ff00">
+            <font>
+                <Font name="System Bold Italic" size="18.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>

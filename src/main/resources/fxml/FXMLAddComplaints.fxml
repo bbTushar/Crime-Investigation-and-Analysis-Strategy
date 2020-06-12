@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="900.0" prefWidth="1300.0" style="-fx-background-color: #000000;" stylesheets="@StyleSheet.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tushar.cias_btushar.FXMLAddComplaintsController">
+    <children>
+        <HBox layoutX="52.0" layoutY="69.0" prefHeight="79.0" prefWidth="1197.0">
+            <children>
+                <Button fx:id="btnHome" mnemonicParsing="false" onAction="#complaintHome" prefHeight="66.0" prefWidth="199.0" style="-fx-background-color: #ffa07a;" styleClass="radius" stylesheets="@StyleSheet.css" text="Home" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="18.0" />
+                    </font></Button>
+                <Button fx:id="btnWomenC" mnemonicParsing="false" onAction="#complaintWomenC" prefHeight="66.0" prefWidth="295.0" style="-fx-background-color: #228b22;" styleClass="radius" stylesheets="@StyleSheet.css" text="Report Women/Child Crimes" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="18.0" />
+                    </font></Button>
+                <Button fx:id="btnCyber" mnemonicParsing="false" onAction="#complaintCyber" prefHeight="66.0" prefWidth="232.0" style="-fx-background-color: #0000ff;" styleClass="radius" stylesheets="@StyleSheet.css" text="Report Cyber Crimes" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="18.0" />
+                    </font></Button>
+                <Button fx:id="btnOther" mnemonicParsing="false" onAction="#complaintOther" prefHeight="66.0" prefWidth="225.0" style="-fx-background-color: #6a5acd;" styleClass="radius" stylesheets="@StyleSheet.css" text="Report Other Crimes" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="18.0" />
+                    </font></Button>
+                <Button mnemonicParsing="false" prefHeight="66.0" prefWidth="230.0" style="-fx-background-color: #8b4513;" styleClass="radius" stylesheets="@StyleSheet.css" text="Track Your Complaint" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="18.0" />
+                    </font>
+                </Button>
+            </children>
+        </HBox>
+        <Pane fx:id="panec" layoutX="6.0" layoutY="161.0" prefHeight="733.0" prefWidth="1289.0" />
+    </children>
+</AnchorPane>

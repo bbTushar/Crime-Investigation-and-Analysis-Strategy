@@ -1,0 +1,18 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/*
+    Created on : Mar 4, 2020, 8:20:17 PM
+    Author     : Tushar
+*/
+
+.label:hover {
+    -fx-background-color: #000000;
+    -fx-underline: true;
+    /*-fx-border-color: #ff0000;*/
+    -fx-text-fill: #0a00ff;
+    -fx-font-size: 22px;
+
+}

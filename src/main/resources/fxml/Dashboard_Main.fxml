@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.web.WebView?>
+
+<AnchorPane id="AnchorPane" prefHeight="1075.0" prefWidth="1697.0" style="-fx-background-color: #000000;" stylesheets="@StyleSheet.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tushar.cias_btushar.Dashboard_MainController">
+    <children>
+        <WebView fx:id="webView" layoutX="3.0" layoutY="48.0" prefHeight="569.0" prefWidth="1214.0" />
+        <WebView fx:id="webView1" layoutX="1186.0" layoutY="111.0" prefHeight="506.0" prefWidth="509.0" />
+        <Label alignment="TOP_CENTER" layoutX="1186.0" layoutY="48.0" prefHeight="21.0" prefWidth="509.0" text="Crime Rate" textFill="RED">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </Label>
+        <Label alignment="TOP_CENTER" layoutX="356.0" layoutY="48.0" prefHeight="21.0" prefWidth="509.0" text="Crime Analysis 2003 - 2018" textFill="RED">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </Label>
+        <WebView fx:id="webView2" layoutX="17.0" layoutY="594.0" prefHeight="481.0" prefWidth="616.0" />
+        <WebView fx:id="webView3" layoutX="966.0" layoutY="594.0" prefHeight="506.0" prefWidth="922.0" AnchorPane.rightAnchor="-191.0" />
+        <AnchorPane layoutX="3.0" layoutY="516.0" prefHeight="43.0" prefWidth="174.0" style="-fx-background-color: #000000;" />
+        <AnchorPane layoutX="1182.0" layoutY="496.0" prefHeight="26.0" prefWidth="83.0" style="-fx-background-color: #000000;" />
+      <Label alignment="TOP_CENTER" layoutX="1138.0" layoutY="550.0" prefHeight="21.0" prefWidth="509.0" text="Violent Crimes 2017" textFill="RED">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label alignment="TOP_CENTER" layoutX="80.0" layoutY="559.0" prefHeight="21.0" prefWidth="509.0" text="Live Data" textFill="RED">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="966.0" layoutY="1005.0" prefHeight="96.0" prefWidth="83.0" style="-fx-background-color: #000000;" />
+      <Label layoutX="639.0" layoutY="647.0" prefHeight="37.0" prefWidth="390.0" styleClass="dash" text="    A Murder" textFill="RED">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="926.0" layoutY="655.0" text="every min" textFill="WHITE" />
+      <Label layoutX="639.0" layoutY="697.0" prefHeight="37.0" prefWidth="390.0" styleClass="dash" text="    A Suicide" textFill="RED">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="926.0" layoutY="705.0" text="every 40 sec" textFill="WHITE" />
+      <Label layoutX="639.0" layoutY="749.0" prefHeight="37.0" prefWidth="390.0" styleClass="dash" text="    7812 Sexual Assaults" textFill="RED">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Pane layoutX="642.0" layoutY="813.0" prefHeight="144.0" prefWidth="390.0" styleClass="dash">
+         <children>
+            <Label layoutX="14.0" layoutY="2.0" prefHeight="35.0" prefWidth="116.0" text="More than" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="130.0" layoutY="2.0" prefHeight="35.0" prefWidth="83.0" text="100,000" textFill="RED">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="224.0" layoutY="2.0" prefHeight="35.0" prefWidth="174.0" text="pending rape" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="37.0" prefHeight="35.0" prefWidth="153.0" text="cases in india." textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="72.0" prefHeight="35.0" prefWidth="116.0" text="Close to" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="111.0" layoutY="72.0" prefHeight="35.0" prefWidth="38.0" text="90" textFill="RED">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="144.0" layoutY="72.0" prefHeight="35.0" prefWidth="237.0" text="Rapes are reported" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="107.0" prefHeight="35.0" prefWidth="188.0" text="everyday in india." textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Label layoutX="926.0" layoutY="757.0" text="every day" textFill="WHITE" />
+    </children>
+</AnchorPane>

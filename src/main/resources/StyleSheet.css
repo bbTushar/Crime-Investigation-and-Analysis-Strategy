@@ -1,0 +1,80 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jan 18, 2020, 11:26:19 AM
+    Author     : Tushar
+*/
+
+.parent{
+     -fx-background-color:transparent;
+}
+
+.reg{
+   /* -fx-background-radius: 5px;*/
+    -fx-border-color:#95B9C7;
+    -fx-border-radius: 60px;
+}
+.font_color{
+    -fx-font-color:#438D80;
+}
+.trans-btn-white-border{
+    -fx-background-color:transparent;
+    -fx-background-radius: 5px;
+    -fx-border-color:#cccccc;
+    -fx-border-radius: 5px;
+    -fx-border-width: 1px;
+    -fx-text-fill:white; 
+    
+    
+}
+.prompt{
+   -fx-prompt-text-fill:#616d7e;
+   -fx-text-fill: #cd4545;
+}
+.oval{
+    -fx-background-color: #ffffff;
+    -fx-background-radius: 50px;
+    
+}
+.grad{
+ -fx-background-color: linear-gradient(to right top, #090809, #19121b, #231a2c, #292240, #2a2c55, #363060, #44336b, #533674, #71306d, #892960, #9b284e, #a43039);
+}
+
+.grad1{
+    -fx-background-color: linear-gradient(to right top, #980098, #711b82, #4f1f69, #331c4d, #1d1530, #1d1329, #1d1023, #1b0e1d, #300f26, #480a27, #5e0320, #6f0810);
+}
+.grad2{
+    -fx-background-color: linear-gradient(to right top, #ff6800, #df3c3d, #ac2751, #71244f, #391e3a, #2e1930, #241426, #1b0e1d, #300f26, #480a27, #5e0320, #6f0810);
+}
+.darkblue{
+    -fx-background-color: linear-gradient(to right top, #0f0c29, #302b63, #24243e);
+}
+.grad3{
+    -fx-background-color:  linear-gradient(to right top, #030303, #361a3a, #801351, #cb0045, #ff3800);
+}
+.textgrad2{
+    -fx-text-fill:  linear-gradient(to right top, #ff6800, #df3c3d, #ac2751, #71244f, #391e3a, #2e1930, #241426, #1b0e1d, #300f26, #480a27, #5e0320, #6f0810);
+}
+.background-image{
+    -fx-background-color: linear-gradient(to right top, #21088b, #410059, #390031, #250117, #000000);
+}
+.sdfdsf{
+    
+-fx-background-color: linear-gradient(to right, #1D2671, #C33764); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.hahaha{
+    -fx-background-color: linear-gradient(to right, #141e30, #243b55);
+}
+.complaint
+{
+    -fx-background-color:  #c3073f;
+    -fx-border-radius: 50px;
+        
+}
+.radius{
+    -fx-background-radius: 50px;
+}

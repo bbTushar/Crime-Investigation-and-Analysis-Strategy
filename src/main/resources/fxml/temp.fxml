@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.effect.Bloom?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="709.0" prefWidth="1237.0" styleClass="darkblue" stylesheets="@StyleSheet.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tushar.cias_btushar.TempController">
+    <children>
+        <ImageView fitHeight="749.0" fitWidth="1198.0" layoutX="26.0" layoutY="4.0" opacity="0.54" pickOnBounds="true" preserveRatio="true" />
+        <Pane fx:id="sajaPane" layoutX="85.0" layoutY="393.0" opacity="0.84" prefHeight="307.0" prefWidth="1062.0" style="-fx-background-radius: 60px;" styleClass="saja" stylesheets="@new.css">
+            <children>
+                <Label fx:id="saja" alignment="TOP_CENTER" layoutX="24.0" layoutY="71.0" prefHeight="242.0" prefWidth="1039.0" text="-Under this Act whoever advocates directly or indirectly for cession or secession in any part of India is liable to be punished.The Act provided that a person can be detained up to 1 year without formal charges or trial against him." textAlignment="JUSTIFY" textFill="WHITE" wrapText="true">
+                    <font>
+                        <Font size="24.0" />
+                    </font>
+                </Label>
+                <Label layoutX="39.0" layoutY="14.0" prefHeight="45.0" prefWidth="505.0" text="Penalty/Consequences/Punishment" textFill="#faff00">
+                    <font>
+                        <Font size="27.0" />
+                    </font>
+                </Label>
+            </children>
+        </Pane>
+        <Label fx:id="label" alignment="CENTER" layoutX="195.0" layoutY="11.0" prefHeight="80.0" prefWidth="860.0" text="Crime Information" textFill="#fff900">
+            <font>
+                <Font name="Arial" size="28.0" />
+            </font>
+        </Label>
+        <Separator layoutX="387.0" layoutY="61.0" prefHeight="24.0" prefWidth="458.0" />
+        <Label fx:id="info" alignment="TOP_CENTER" layoutX="88.0" layoutY="137.0" prefHeight="260.0" prefWidth="1074.0" text="Terrorism is not an ideology like communism or capitalism.Rather, terrorism is a tactic – a strategy used to achieve a specific end.This strategy is often used in asymmetric power struggles when a weaker person, or group, is fighting against a powerful nation-state.The violence is aimed at creating fear in the targeted population and often provokes prompt and violent response from the state." textFill="WHITE" wrapText="true">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </Label>
+        <Button fx:id="btnClose" blendMode="LIGHTEN" layoutX="1190.0" layoutY="10.0" mnemonicParsing="false" onAction="#close" style="-fx-background-color: #30303d;" text="X" textFill="RED">
+            <font>
+                <Font size="21.0" />
+            </font>
+            <effect>
+                <Bloom />
+            </effect></Button>
+    </children>
+</AnchorPane>

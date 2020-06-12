@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="fxmlCias" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="1600.0" style="-fx-background-color: #000000;" styleClass="parent" stylesheets="@StyleSheet.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tushar.cias_btushar.FXMLCiasController">
+    <children>
+        <Pane layoutX="300.0" prefHeight="900.0" prefWidth="1300.0">
+            <children>
+                <VBox fx:id="vbox" layoutY="-1.0" prefHeight="900.0" prefWidth="1300.0" styleClass="parent" stylesheets="@StyleSheet.css" />
+                <Label fx:id="btnHeader" alignment="BASELINE_LEFT" prefHeight="44.0" prefWidth="395.0" text="   FLOAT" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="28.0" />
+                    </font>
+                </Label>
+                <JFXButton fx:id="close" blendMode="RED" buttonType="RAISED" layoutX="1259.0" onAction="#crossClose" text="X" textFill="WHITE">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </JFXButton>
+            </children>
+        </Pane>
+        <Pane prefHeight="900.0" prefWidth="300.0" style="-fx-background-color: #05071e;">
+            <children>
+                <Label alignment="CENTER" layoutY="82.0" prefHeight="22.0" prefWidth="300.0" text="Welcome To C.I.A.S">
+                    <font>
+                        <Font size="28.0" />
+                    </font>
+                    <textFill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                            <stops>
+                                <Stop color="#ff1ae8e5" />
+                                <Stop color="#d0c833" offset="1.0" />
+                            </stops>
+                        </LinearGradient>
+                    </textFill>
+                </Label>
+                <JFXButton fx:id="btnHome" alignment="BOTTOM_LEFT" layoutX="-6.0" layoutY="188.0" onAction="#open_Home" prefHeight="48.0" prefWidth="300.0" ripplerFill="RED" text=" Home " textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="18.0" />
+                    </font>
+                    <graphic>
+                        <FontAwesomeIcon fill="#f8f8f8" glyphName="HOME" size="2em" />
+                    </graphic></JFXButton>
+                <JFXButton fx:id="btnHotNews" alignment="BOTTOM_LEFT" layoutX="-6.0" layoutY="254.0" onAction="#open_HotNews" prefHeight="48.0" prefWidth="300.0" ripplerFill="RED" text="  Hot News" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="18.0" />
+                    </font>
+                    <graphic>
+                        <FontAwesomeIcon fill="#f8f8f8" glyphName="FIRE" size="2em" />
+                    </graphic>
+                </JFXButton>
+                <JFXButton fx:id="btnCrime" alignment="BOTTOM_LEFT" layoutX="-6.0" layoutY="320.0" onAction="#open_Crime" prefHeight="48.0" prefWidth="300.0" ripplerFill="RED" text=" Crime " textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="18.0" />
+                    </font>
+                    <graphic>
+                        <FontAwesomeIcon fill="#f8f8f8" glyphName="SORT_AMOUNT_ASC" size="2em" text="" />
+                    </graphic>
+                </JFXButton>
+                <JFXButton fx:id="btnWomenSafety" alignment="BOTTOM_LEFT" layoutX="-6.0" layoutY="386.0" onAction="#open_WomenSafety" prefHeight="48.0" prefWidth="300.0" ripplerFill="RED" text="   Women Safety" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="18.0" />
+                    </font>
+                    <graphic>
+                        <FontAwesomeIcon fill="#f8f8f8" glyphName="FEMALE" size="2em" />
+                    </graphic>
+                </JFXButton>
+                <JFXButton fx:id="btnAddComplaint" alignment="BOTTOM_LEFT" layoutX="-6.0" layoutY="452.0" onAction="#open_AddComplaints" prefHeight="48.0" prefWidth="300.0" ripplerFill="RED" text="  Add Complaints" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="18.0" />
+                    </font>
+                    <graphic>
+                        <FontAwesomeIcon fill="#f8f8f8" glyphName="CART_PLUS" size="2em" />
+                    </graphic>
+                </JFXButton>
+                <JFXButton fx:id="btnLogOut" layoutX="14.0" layoutY="846.0" onAction="#logOut" prefHeight="40.0" prefWidth="142.0" text=" Log Out" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="17.0" />
+                    </font>
+                    <graphic>
+                        <FontAwesomeIcon fill="#f8f8f8" glyphName="SIGN_OUT" size="25px" />
+                    </graphic>
+                </JFXButton>
+
+            </children></Pane>
+    </children>
+</AnchorPane>

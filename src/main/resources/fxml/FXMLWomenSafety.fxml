@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.media.MediaView?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="1300.0" style="-fx-background-color: #000000;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tushar.cias_btushar.FXMLWomenSafetyController">
+    <children>
+        <Label alignment="CENTER" layoutX="14.0" layoutY="50.0" prefHeight="21.0" prefWidth="1257.0" text="&quot; Women do not need to be polite with someone who is making them uncomfortable. &quot;" textFill="RED">
+            <font>
+                <Font size="27.0" />
+            </font>
+        </Label>
+        <Line endX="1176.0" layoutX="115.0" layoutY="114.0" startX="-100.0" stroke="#00ff40" />
+        <Label alignment="CENTER" layoutX="187.0" layoutY="143.0" prefHeight="35.0" prefWidth="315.0" style="-fx-background-color: #ffff00;" text="Self Defence Equipments" underline="true">
+            <font>
+                <Font name="System Bold Italic" size="24.0" />
+            </font>
+        </Label>
+        <Separator layoutX="647.0" layoutY="138.0" orientation="VERTICAL" prefHeight="314.0" prefWidth="4.0" />
+        <Label alignment="CENTER" layoutX="855.0" layoutY="143.0" prefHeight="35.0" prefWidth="315.0" style="-fx-background-color: #ffff00;" text="Emergency Numbers" underline="true">
+            <font>
+                <Font name="System Bold Italic" size="24.0" />
+            </font>
+        </Label>
+        <Label layoutX="37.0" layoutY="205.0" onMouseClicked="#openIt" prefHeight="21.0" prefWidth="106.0" style="-fx-cursor: hand;" stylesheets="@label.css" text="1. Pistol" textFill="WHITE">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Label>
+        <Label layoutX="37.0" layoutY="235.0" onMouseClicked="#open2" prefHeight="30.0" prefWidth="144.0" style="-fx-cursor: hand;" stylesheets="@label.css" text="2. Pepper Spray" textFill="WHITE">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Label>
+        <Label layoutX="37.0" layoutY="265.0" onMouseClicked="#open3" prefHeight="30.0" prefWidth="187.0" style="-fx-cursor: hand;" stylesheets="@label.css" text="3. Lipstick Stun Guns" textFill="WHITE">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Label>
+        <Label layoutX="37.0" layoutY="295.0" onMouseClicked="#open4" prefHeight="30.0" prefWidth="231.0" style="-fx-cursor: hand;" stylesheets="@label.css" text="4. Personal Alarm System" textFill="WHITE">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Label>
+        <Label layoutX="37.0" layoutY="325.0" onMouseClicked="#open5" prefHeight="30.0" prefWidth="231.0" style="-fx-cursor: hand;" stylesheets="@label.css" text="5. Hidden Knife Combs" textFill="WHITE">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Label>
+        <Label layoutX="327.0" layoutY="205.0" onMouseClicked="#open8" prefHeight="30.0" prefWidth="231.0" style="-fx-cursor: hand;" stylesheets="@label.css" text="8. Door Stopper" textFill="WHITE">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Label>
+        <Label layoutX="327.0" layoutY="235.0" onMouseClicked="#open9" prefHeight="30.0" prefWidth="231.0" style="-fx-cursor: hand;" stylesheets="@label.css" text="9. Tactical Knife" textFill="WHITE">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Label>
+        <Label layoutX="327.0" layoutY="265.0" onMouseClicked="#open10" prefHeight="30.0" prefWidth="315.0" style="-fx-cursor: hand;" stylesheets="@label.css" text="10. Go Guarded Self-defence Rings" textFill="WHITE">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Label>
+        <Label layoutX="327.0" layoutY="292.0" onMouseClicked="#open11" prefHeight="30.0" prefWidth="231.0" style="-fx-cursor: hand;" stylesheets="@label.css" text="11. Retractable Batons" textFill="WHITE">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Label>
+        <Label layoutX="327.0" layoutY="322.0" onMouseClicked="#open12" prefHeight="30.0" prefWidth="246.0" style="-fx-cursor: hand;" stylesheets="@label.css" text="12. Self-defence Flashlights" textFill="WHITE">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Label>
+        <Label layoutX="37.0" layoutY="352.0" onMouseClicked="#open6" prefHeight="66.0" prefWidth="279.0" style="-fx-cursor: hand;" stylesheets="@label.css" text="6. &quot;Bulldog&quot; Self Defence Keychain" textFill="WHITE" wrapText="true">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Label>
+        <Label layoutX="37.0" layoutY="418.0" onMouseClicked="#open7" prefHeight="30.0" prefWidth="231.0" style="-fx-cursor: hand;" stylesheets="@label.css" text="7. Slap Hat" textFill="WHITE">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Label>
+        <Label layoutX="327.0" layoutY="355.0" onMouseClicked="#open13" prefHeight="30.0" prefWidth="231.0" style="-fx-cursor: hand;" stylesheets="@label.css" text="13. Tactical Pens" textFill="WHITE">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Label>
+        <Label layoutX="327.0" layoutY="418.0" onMouseClicked="#open15" prefHeight="30.0" prefWidth="231.0" style="-fx-cursor: hand;" stylesheets="@label.css" text="15. Other Panic Apps " textFill="WHITE">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Label>
+        <Label layoutX="327.0" layoutY="385.0" onMouseClicked="#open14" prefHeight="30.0" prefWidth="231.0" style="-fx-cursor: hand;" stylesheets="@label.css" text="14. Pepper Gel " textFill="WHITE">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Label>
+        <AnchorPane layoutX="692.0" layoutY="220.0" prefHeight="245.0" prefWidth="561.0">
+            <children>
+                <Label prefHeight="30.0" prefWidth="347.0" text="NATIONAL EMERGENCY NUMBER-112" textFill="WHITE">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </Label>
+                <Label layoutY="30.0" prefHeight="30.0" prefWidth="187.0" text="POLICE-100" textFill="WHITE">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </Label>
+                <Label layoutY="60.0" prefHeight="30.0" prefWidth="187.0" text="FIRE-101" textFill="WHITE">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </Label>
+                <Label layoutY="87.0" prefHeight="30.0" prefWidth="187.0" text="AMBULANCE-102" textFill="WHITE">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </Label>
+                <Label layoutY="117.0" prefHeight="30.0" prefWidth="373.0" style="-fx-background-color: #ff0000;" text="Women Helpline-1091" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="20.0" />
+                    </font>
+                </Label>
+                <Label layoutY="147.0" prefHeight="30.0" prefWidth="373.0" style="-fx-background-color: #ff0000;" text="Women Helpline - Domestic Abuse-181" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="20.0" />
+                    </font>
+                </Label>
+                <JFXButton layoutX="310.0" layoutY="200.0" onAction="#openEmer" prefHeight="39.0" prefWidth="231.0" style="-fx-background-color: #b400ff;" text="&gt; Other Emergency Numbers" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="15.0" />
+                    </font>
+                </JFXButton>
+            </children>
+        </AnchorPane>
+        <Line endX="1176.0" layoutX="115.0" layoutY="481.0" startX="-100.0" stroke="#00ff40" />
+        <MediaView fx:id="mediaView" fitHeight="400.0" fitWidth="650.0" layoutX="16.0" layoutY="488.0" />
+        <JFXButton fx:id="playB" layoutX="233.0" layoutY="849.0" onAction="#play" prefHeight="39.0" prefWidth="48.0" text=" " />
+        <JFXButton fx:id="pauseB" layoutX="294.0" layoutY="849.0" onAction="#pause" prefHeight="39.0" prefWidth="48.0" text=" " />
+        <FontAwesomeIcon fill="RED" glyphName="PLAY" layoutX="250.0" layoutY="881.0" />
+        <FontAwesomeIcon fill="RED" glyphName="PAUSE" layoutX="309.0" layoutY="881.0" />
+        <FontAwesomeIcon fill="RED" glyphName="STOP" layoutX="369.0" layoutY="881.0" />
+        <JFXButton fx:id="stopB" layoutX="352.0" layoutY="849.0" onAction="#stop" prefHeight="39.0" prefWidth="48.0" text=" " />
+        <Label layoutX="692.0" layoutY="501.0" prefHeight="74.0" prefWidth="554.0" text="Following are the most vulnerable areas to attack :" textFill="#22ff00" wrapText="true">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </Label>
+        <Label layoutX="728.0" layoutY="575.0" prefHeight="74.0" prefWidth="512.0" text="Use your knees to hit hard between the legs of the attacker" textFill="WHITE" wrapText="true">
+            <font>
+                <Font size="21.0" />
+            </font>
+        </Label>
+        <Label layoutX="692.0" layoutY="575.0" prefHeight="59.0" prefWidth="19.0" text="*" textFill="#22ff00">
+            <font>
+                <Font name="System Bold" size="41.0" />
+            </font>
+        </Label>
+        <Label layoutX="728.0" layoutY="642.0" prefHeight="50.0" prefWidth="512.0" text="Using your fingers to poke hard in the eyes" textFill="WHITE" wrapText="true">
+            <font>
+                <Font size="21.0" />
+            </font>
+        </Label>
+        <Label layoutX="692.0" layoutY="642.0" prefHeight="59.0" prefWidth="19.0" text="*" textFill="#22ff00">
+            <font>
+                <Font name="System Bold" size="41.0" />
+            </font>
+        </Label>
+        <Label layoutX="728.0" layoutY="688.0" prefHeight="74.0" prefWidth="512.0" text="Hitting front part of the neck on the Adams apple will leave him in a shock" textFill="WHITE" wrapText="true">
+            <font>
+                <Font size="21.0" />
+            </font>
+        </Label>
+        <Label layoutX="692.0" layoutY="688.0" prefHeight="59.0" prefWidth="19.0" text="*" textFill="#22ff00">
+            <font>
+                <Font name="System Bold" size="41.0" />
+            </font>
+        </Label>
+        <Label layoutX="728.0" layoutY="754.0" prefHeight="74.0" prefWidth="512.0" text="Punching in the stomach will leave the attacker breathless &amp; unable to chase you" textFill="WHITE" wrapText="true">
+            <font>
+                <Font size="21.0" />
+            </font>
+        </Label>
+        <Label layoutX="692.0" layoutY="754.0" prefHeight="59.0" prefWidth="19.0" text="*" textFill="#22ff00">
+            <font>
+                <Font name="System Bold" size="41.0" />
+            </font>
+        </Label>
+        <Label layoutX="694.0" layoutY="839.0" onMouseClicked="#openDefence" prefHeight="30.0" prefWidth="106.0" style="-fx-background-color: #ff0000; -fx-cursor: hand;" stylesheets="@label.css" text="#Click Here" textFill="WHITE">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Label>
+        <Label layoutX="803.0" layoutY="839.0" prefHeight="30.0" prefWidth="279.0" text="For More Defence Techniques. " textFill="RED">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>

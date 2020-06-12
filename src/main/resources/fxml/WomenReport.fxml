@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXTimePicker?>
+<?import com.jfoenix.controls.JFXToggleButton?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="acpane" prefHeight="733.0" prefWidth="1289.0" style="-fx-background-color: #000000;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tushar.cias_btushar.WomenReportController">
+    <children>
+        <Label layoutX="14.0" layoutY="-2.0" prefHeight="35.0" prefWidth="289.0" text="Cateogory of Complaint* :" textFill="RED" textOverrun="LEADING_ELLIPSIS" AnchorPane.bottomAnchor="702.0">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </Label>
+        <JFXComboBox fx:id="selectComplaint" focusColor="#2b1d94" labelFloat="true" layoutX="294.0" layoutY="2.0" prefHeight="31.0" prefWidth="346.0" promptText="Complaint Category" style="-fx-text-fill: #ffffff;" unFocusColor="WHITE" />
+        <Label layoutX="14.0" layoutY="76.0" prefHeight="87.0" prefWidth="289.0" text="Approximate Date &amp;Time of Incident/Content :" textFill="WHITE" textOverrun="LEADING_ELLIPSIS" wrapText="true">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </Label>
+        <Separator layoutX="638.0" layoutY="56.0" opacity="0.36" orientation="VERTICAL" prefHeight="654.0" prefWidth="13.0" />
+        <DatePicker fx:id="date" layoutX="305.0" layoutY="86.0" prefHeight="33.0" prefWidth="326.0" promptText="mm/dd/yyyy" style="-fx-border-color: #000000; -fx-background-color: #000000;" />
+        <JFXTimePicker fx:id="time" layoutX="305.0" layoutY="134.0" prefHeight="31.0" prefWidth="326.0" style="-fx-background-color: #ffffff;" />
+        <Label layoutX="14.0" layoutY="180.0" prefHeight="87.0" prefWidth="272.0" text="Reason for Delay in Reporting :" textFill="WHITE" textOverrun="LEADING_ELLIPSIS" wrapText="true">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </Label>
+        <JFXTextField fx:id="reason" layoutX="303.0" layoutY="216.0" prefHeight="31.0" prefWidth="326.0" style="-fx-text-inner-color: #ffffff;" unFocusColor="WHITE" />
+        <Label layoutX="14.0" layoutY="280.0" prefHeight="60.0" prefWidth="272.0" text="State / UTs :" textFill="WHITE" textOverrun="LEADING_ELLIPSIS" wrapText="true">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </Label>
+        <JFXTextField fx:id="state" layoutX="303.0" layoutY="295.0" prefHeight="31.0" prefWidth="326.0" style="-fx-text-inner-color: #ffffff;" unFocusColor="WHITE" />
+        <Label layoutX="14.0" layoutY="361.0" prefHeight="60.0" prefWidth="272.0" text="District :" textFill="WHITE" textOverrun="LEADING_ELLIPSIS" wrapText="true">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </Label>
+        <JFXTextField fx:id="district" layoutX="303.0" layoutY="376.0" prefHeight="31.0" prefWidth="326.0" style="-fx-text-inner-color: #ffffff;" unFocusColor="WHITE" />
+        <Label layoutX="14.0" layoutY="436.0" prefHeight="60.0" prefWidth="272.0" text="City :" textFill="WHITE" textOverrun="LEADING_ELLIPSIS" wrapText="true">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </Label>
+        <JFXTextField fx:id="city" layoutX="303.0" layoutY="451.0" prefHeight="31.0" prefWidth="326.0" style="-fx-text-inner-color: #ffffff;" unFocusColor="WHITE" />
+        <Label layoutX="14.0" layoutY="506.0" prefHeight="60.0" prefWidth="272.0" text="Police Station :" textFill="WHITE" textOverrun="LEADING_ELLIPSIS" wrapText="true">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </Label>
+        <JFXTextField fx:id="station" layoutX="303.0" layoutY="521.0" prefHeight="31.0" prefWidth="326.0" style="-fx-text-inner-color: #ffffff;" unFocusColor="WHITE" />
+        <Label layoutX="14.0" layoutY="577.0" prefHeight="60.0" prefWidth="272.0" text="Supporting Evidence :" textFill="WHITE" textOverrun="LEADING_ELLIPSIS" wrapText="true">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </Label>
+        <Label layoutX="14.0" layoutY="627.0" prefHeight="21.0" prefWidth="203.0" text="(Upload Media/Image/Pdf.)" textFill="WHITE" />
+        <JFXButton fx:id="browse" layoutX="305.0" layoutY="602.0" onAction="#choosePicture" prefHeight="31.0" prefWidth="326.0" style="-fx-background-color: #ff0000;" text="Choose File" textFill="WHITE" underline="true">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </JFXButton>
+        <Label layoutX="671.0" layoutY="75.0" prefHeight="60.0" prefWidth="272.0" text="Relationship with Victim :" textFill="WHITE" textOverrun="LEADING_ELLIPSIS" wrapText="true">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </Label>
+        <JFXComboBox fx:id="selectRelation" labelFloat="true" layoutX="958.0" layoutY="90.0" prefHeight="31.0" prefWidth="272.0" promptText="Victim Relation" unFocusColor="WHITE" />
+        <Label layoutX="668.0" layoutY="136.0" prefHeight="60.0" prefWidth="414.0" text="Additional Information about incident :" textFill="WHITE" textOverrun="LEADING_ELLIPSIS" wrapText="true">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </Label>
+        <TextArea fx:id="incidentInfo" layoutX="668.0" layoutY="193.0" prefHeight="121.0" prefWidth="528.0" />
+        <JFXToggleButton fx:id="toggle" layoutX="781.0" layoutY="321.0" onAction="#toogleAction" text="Suspect Details Available" textFill="RED" toggleColor="#00a400" toggleLineColor="RED" unToggleLineColor="#9e9898">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </JFXToggleButton>
+        <Pane fx:id="suspectPane" layoutX="651.0" layoutY="382.0" prefHeight="245.0" prefWidth="630.0">
+            <children>
+                <JFXTextField fx:id="suspectFN" focusColor="#2545a4" layoutX="62.0" layoutY="30.0" prefHeight="31.0" prefWidth="223.0" promptText="Suspect First Name" style="-fx-text-inner-color: #ffffff;" unFocusColor="WHITE" />
+                <JFXTextField fx:id="suspectLN" focusColor="#2545a4" layoutX="349.0" layoutY="30.0" prefHeight="31.0" prefWidth="223.0" promptText="Suspect Last Name" style="-fx-text-inner-color: #ffffff;" unFocusColor="WHITE" />
+                <JFXComboBox fx:id="suspectCombo" layoutX="62.0" layoutY="98.0" onAction="#susPhone" prefHeight="31.0" prefWidth="223.0" promptText="Any Suspect's Identity" unFocusColor="WHITE" />
+                <Label layoutX="62.0" layoutY="157.0" prefHeight="60.0" prefWidth="272.0" text="Suspect Photograph :" textFill="WHITE" textOverrun="LEADING_ELLIPSIS" wrapText="true">
+                    <font>
+                        <Font size="24.0" />
+                    </font>
+                </Label>
+                <Label layoutX="62.0" layoutY="207.0" prefHeight="21.0" prefWidth="223.0" text="(Upload any photo of Suspect.)" textFill="WHITE" />
+                <JFXButton fx:id="browse2" layoutX="325.0" layoutY="182.0" onAction="#choosePicture2" prefHeight="51.0" prefWidth="272.0" style="-fx-background-color: #ff0000;" text="Choose File" textFill="WHITE" underline="true">
+                    <font>
+                        <Font size="22.0" />
+                    </font>
+                </JFXButton>
+                <JFXTextField fx:id="pho" layoutX="349.0" layoutY="98.0" prefHeight="31.0" prefWidth="223.0" style="-fx-background-color: #ffffff;" />
+                <Label fx:id="problem1" alignment="TOP_CENTER" layoutX="181.0" layoutY="-13.0" prefHeight="21.0" prefWidth="289.0" text="Please fill Suspect Details " textFill="RED">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+            </children>
+        </Pane>
+        <JFXCheckBox fx:id="checkBox" layoutX="824.0" layoutY="652.0" onAction="#checkAction" prefHeight="31.0" prefWidth="109.0" text="I Agree" textFill="WHITE">
+            <font>
+                <Font size="21.0" />
+            </font>
+        </JFXCheckBox>
+        <Label layoutX="824.0" layoutY="686.0" prefHeight="21.0" prefWidth="76.0" text="T&amp;C*" textFill="#dad4d4" />
+        <JFXButton fx:id="submit" disable="true" layoutX="953.0" layoutY="652.0" onAction="#submit" prefHeight="43.0" prefWidth="109.0" text="Submit" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="15.0" />
+            </font>
+        </JFXButton>
+        <JFXTextField fx:id="victimFN" focusColor="#2545a4" layoutX="703.0" layoutY="18.0" prefHeight="31.0" prefWidth="223.0" promptText="Victim First Name" style="-fx-text-inner-color: #ffffff;" unFocusColor="WHITE" />
+        <JFXTextField fx:id="victimLN" focusColor="#2545a4" layoutX="990.0" layoutY="18.0" prefHeight="31.0" prefWidth="223.0" promptText="Victim Last Name" style="-fx-text-inner-color: #ffffff;" unFocusColor="WHITE" />
+        <Label fx:id="problem" layoutX="303.0" layoutY="686.0" prefHeight="21.0" prefWidth="289.0" text="One or more field is empty !" textFill="RED">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <Label fx:id="success" layoutX="303.0" layoutY="686.0" prefHeight="21.0" prefWidth="289.0" text="Complaint Registered Successfully !" textFill="#00ff1e" visible="false">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+      <Label layoutX="237.0" layoutY="126.0" text="*" textFill="RED" />
+      <Label layoutX="147.0" layoutY="300.0" text="*" textFill="RED" />
+      <Label layoutX="101.0" layoutY="377.0" text="*" textFill="RED" />
+      <Label layoutX="68.0" layoutY="456.0" text="*" textFill="RED" />
+      <Label layoutX="173.0" layoutY="526.0" text="*" textFill="RED" />
+      <Label layoutX="252.0" layoutY="592.0" text="*" textFill="RED" />
+      <Label layoutX="683.0" layoutY="25.0" prefHeight="21.0" prefWidth="13.0" text="*" textFill="RED" />
+      <Label layoutX="977.0" layoutY="25.0" prefHeight="21.0" prefWidth="13.0" text="*" textFill="RED" />
+      <Label layoutX="665.0" layoutY="92.0" prefHeight="21.0" prefWidth="13.0" text="*" textFill="RED" />
+    </children>
+</AnchorPane>
