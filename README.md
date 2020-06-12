@@ -7,4 +7,4 @@
 3. Setting up the environment variables is necessary.
 
 
-@ For any Queries 
+@ For any Queries contact me at tusharbadewale1998@gmail.com
