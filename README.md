@@ -3,4 +3,5 @@
 2) You must have *Maven* installed in order to run this project.
       # To-Install-Maven
        I) Go to https://maven.apache.org/download.cgi and click on binary zip archive's first file
+       II) Set-up the environmental variables. Please refer this video https://www.youtube.com/watch?v=WBOLiS4fsQs
 
