@@ -5,7 +5,9 @@
 # To-Install-Maven
   I) Go to https://maven.apache.org/download.cgi and download binary zip archive file.
   
-  II) Set-up the environmental variables. Please refer this video https://www.youtube.com/watch?v=WBOLiS4fsQs
+  II) Setting up the Environment variables is neccesary.
+  
+  III) Set-up the environmental variables: Please refer this video https://www.youtube.com/watch?v=WBOLiS4fsQs
 3. Setting up the environment variables is necessary.
 
 @ For any Queries contact me at tusharbadewale1998@gmail.com
