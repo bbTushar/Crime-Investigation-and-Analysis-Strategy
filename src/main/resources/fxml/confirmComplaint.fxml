@@ -11,9 +11,9 @@
 
 <AnchorPane id="AnchorPane" fx:id="acpane" prefHeight="733.0" prefWidth="1289.0" style="-fx-background-color: #000000;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tushar.cias_btushar.ConfirmComplaintController">
     <children>
-        <Label alignment="TOP_CENTER" layoutX="541.0" prefHeight="118.0" prefWidth="207.0" text="C.I.A.S" textFill="RED">
+        <Label alignment="TOP_CENTER" layoutX="541.0" layoutY="36.0" prefHeight="118.0" prefWidth="207.0" text="C.I.A.S" textFill="RED">
             <font>
-                <Font name="Agency FB Bold" size="96.0" />
+                <Font name="Calibri" size="58.0" />
             </font>
         </Label>
         <Label alignment="CENTER" layoutX="461.0" layoutY="95.0" prefHeight="60.0" prefWidth="367.0" text="CRIME INVESTIGATION AND ANALYSIS STRATEGY" textFill="#bca5a5" wrapText="true">

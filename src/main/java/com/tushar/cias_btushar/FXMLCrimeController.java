@@ -76,50 +76,33 @@ public class FXMLCrimeController implements Initializable {
     @FXML
     private JFXTextField searchCr;
 
-    public static final String SONG = "C:\\IntelliJProject\\CIAS\\src\\audio\\email scam eng.mp3";
-    public static final String SONG1 = "C:\\IntelliJProject\\CIAS\\src\\audio\\email scam hin.mp3";
+    
+    
+    Media media = new Media(getClass().getResource("/audio/email scam eng.mp3").toExternalForm());
+    MediaPlayer player = new MediaPlayer(media);
+    
+    Media media1 = new Media(getClass().getResource("/audio/email scam hin.mp3").toExternalForm());
+    MediaPlayer player1 = new MediaPlayer(media1);
+    
+    Media media2 = new Media(getClass().getResource("/audio/identity theft eng.mp3").toExternalForm());
+    MediaPlayer player2 = new MediaPlayer(media2);
+    
+    Media media3 = new Media(getClass().getResource("/audio/identity theft hin.mp3").toExternalForm());
+    MediaPlayer player3 = new MediaPlayer(media3);
+    
+    Media media4 = new Media(getClass().getResource("/audio/Obscene content eng.mp3").toExternalForm());
+    MediaPlayer player4 = new MediaPlayer(media4);
+    
+    Media media5 = new Media(getClass().getResource("/audio/Obscene content hin.mp3").toExternalForm());
+    MediaPlayer player5 = new MediaPlayer(media5);
+    
+    Media media6 = new Media(getClass().getResource("/audio/cyber bullying eng.mp3").toExternalForm());
+    MediaPlayer player6 = new MediaPlayer(media6);
+    
+    Media media7 = new Media(getClass().getResource("/audio/cyber bullying hin.mp3").toExternalForm());
+    MediaPlayer player7 = new MediaPlayer(media7);
+    
 
-    public static final String SONG2 = "C:\\IntelliJProject\\CIAS\\src\\audio\\identity theft eng.mp3";
-    public static final String SONG3 = "C:\\IntelliJProject\\CIAS\\src\\audio\\identity theft hin.mp3";
-
-    public static final String SONG4 = "C:\\IntelliJProject\\CIAS\\src\\audio\\Obscene content eng.mp3";
-    public static final String SONG5 = "C:\\IntelliJProject\\CIAS\\src\\audio\\Obscene content hin.mp3";
-
-    public static final String SONG6 = "C:\\IntelliJProject\\CIAS\\src\\audio\\cyber bullying eng.mp3";
-    public static final String SONG7 = "C:\\IntelliJProject\\CIAS\\src\\audio\\cyber bullying hin.mp3";
-
-    String bip = SONG;
-    Media hit = new Media(new File(bip).toURI().toString());
-    MediaPlayer player = new MediaPlayer(hit);
-    
-    String bip1 = SONG1;
-    Media hit1 = new Media(new File(bip1).toURI().toString());
-    MediaPlayer player1 = new MediaPlayer(hit1);
-    
-    String bip2 = SONG2;
-    Media hit2 = new Media(new File(bip2).toURI().toString());
-    MediaPlayer player2 = new MediaPlayer(hit2);
-    
-    String bip3 = SONG3;
-    Media hit3 = new Media(new File(bip3).toURI().toString());
-    MediaPlayer player3 = new MediaPlayer(hit3);
-    
-    String bip4 = SONG4;
-    Media hit4 = new Media(new File(bip4).toURI().toString());
-    MediaPlayer player4 = new MediaPlayer(hit4);
-    
-    String bip5 = SONG5;
-    Media hit5 = new Media(new File(bip5).toURI().toString());
-    MediaPlayer player5 = new MediaPlayer(hit5);
-    
-    String bip6 = SONG6;
-    Media hit6 = new Media(new File(bip6).toURI().toString());
-    MediaPlayer player6 = new MediaPlayer(hit6);
-    
-    String bip7 = SONG7;
-    Media hit7 = new Media(new File(bip7).toURI().toString());
-    MediaPlayer player7 = new MediaPlayer(hit7);
-    
    
 
     @FXML
@@ -393,12 +376,7 @@ public class FXMLCrimeController implements Initializable {
         loadStage("/fxml/temp.fxml");
     }
 
-    private void searchCrime(ActionEvent event) {
-        if(searchCr.getText().compareToIgnoreCase("rape")==1)
-        {
-            System.out.println("juhudsu");
-        }
-    }
+  
 
     @FXML
     private int searchCrime(KeyEvent event) {

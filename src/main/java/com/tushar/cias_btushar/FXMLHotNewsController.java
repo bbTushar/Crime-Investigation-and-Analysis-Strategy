@@ -6,12 +6,8 @@
 package com.tushar.cias_btushar;
 
 import com.jfoenix.controls.JFXButton;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.net.URL;
 import java.util.ResourceBundle;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -68,17 +64,12 @@ public class FXMLHotNewsController implements Initializable {
         if(i==0)
         {
             Image image;
-            try {
-
-                image = new Image(new FileInputStream("F:\\My Netbeans\\CIAS\\src\\image\\1.jpg"));
-                img1.setImage(image);
-                h1.setText("Sweeper held for molesting minor at Yavatmal wedding:");
-                content1.setText("Yavatmal: A 25-Year-old sweeper was arrested for allegedly molesting a 10-year-old girl at a wedding in the city on Wednesday night, police said on Thursday.\n" +
-                        "Lohara police arrested akshay chandekar after he was allegedly caught molesting the minor in a lawn of a hotel on darwha road where the wedding was taking place, an official said. Chandekar had approached the girl on the pretext of giving her food and took her to the lawn and molested her, he said, adding that the act was caught on the hotel’s CCTV camera.\n" +
-                        "SEC- Arrested Under 354 and provision of prevention of children from sexual offence act (POCSO). he added agencies.");
-            } catch (FileNotFoundException ex) {
-                Logger.getLogger(FXMLHotNewsController.class.getName()).log(Level.SEVERE, null, ex);
-            }
+            image = new Image(getClass().getResourceAsStream("/image/1.jpg"));
+            img1.setImage(image);
+            h1.setText("Sweeper held for molesting minor at Yavatmal wedding:");
+            content1.setText("Yavatmal: A 25-Year-old sweeper was arrested for allegedly molesting a 10-year-old girl at a wedding in the city on Wednesday night, police said on Thursday.\n" +
+                    "Lohara police arrested akshay chandekar after he was allegedly caught molesting the minor in a lawn of a hotel on darwha road where the wedding was taking place, an official said. Chandekar had approached the girl on the pretext of giving her food and took her to the lawn and molested her, he said, adding that the act was caught on the hotel’s CCTV camera.\n" +
+                    "SEC- Arrested Under 354 and provision of prevention of children from sexual offence act (POCSO). he added agencies.");
         }else
         if(i==1)
         {
