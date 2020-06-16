@@ -40,5 +40,6 @@ User can have detail analysis of crimes with respect to year, country and crime 
 ![Dashboard](https://raw.githubusercontent.com/bbTushar/Crime-Investigation-and-Analysis-Strategy/master/screenshots/6.png)
 
 
-@ For any Queries contact me at tusharbadewale1998@gmail.com
+__Any Queruies ?
+Contact : tusharbadewale1998@gmail.com __
 
