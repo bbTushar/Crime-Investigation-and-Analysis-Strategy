@@ -14,7 +14,8 @@
 @ For any Queries contact me at tusharbadewale1998@gmail.com
 
 ## Screenshots
-#### Dashboard
+#### Dashboard 
+User can have detail analysis of crimes with respect to year, country and crime type.
 
 ![Dashboard](https://raw.githubusercontent.com/bbTushar/Crime-Investigation-and-Analysis-Strategy/master/screenshots/1.png)
 
