@@ -14,22 +14,22 @@
 @ For any Queries contact me at tusharbadewale1998@gmail.com
 
 ## Screenshots
-###### Dashboard
+#### Dashboard
 
 ![Dashboard](https://raw.githubusercontent.com/bbTushar/Crime-Investigation-and-Analysis-Strategy/master/screenshots/1.png)
 
-###### World Map
+#### World Map
 
 ![Dashboard](https://raw.githubusercontent.com/bbTushar/Crime-Investigation-and-Analysis-Strategy/master/screenshots/2.png)
 
-###### Projection
+#### Projection
 
 ![Dashboard](https://raw.githubusercontent.com/bbTushar/Crime-Investigation-and-Analysis-Strategy/master/screenshots/3.png)
 
-###### Crime Information
+#### Crime Information
 
 ![Dashboard](https://raw.githubusercontent.com/bbTushar/Crime-Investigation-and-Analysis-Strategy/master/screenshots/5.png)
 
-###### Women Safety
+#### Women Safety
 
 ![Dashboard](https://raw.githubusercontent.com/bbTushar/Crime-Investigation-and-Analysis-Strategy/master/screenshots/6.png)
