@@ -14,4 +14,4 @@
 @ For any Queries contact me at tusharbadewale1998@gmail.com
 
 ## Screenshots
-![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)
+![Image of Yaktocat](https://github.com/bbTushar/Crime-Investigation-and-Analysis-Strategy/screenshots/1.png)
