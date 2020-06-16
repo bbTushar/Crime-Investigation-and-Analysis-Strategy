@@ -17,3 +17,19 @@
 ###### Dashboard
 
 ![Dashboard](https://raw.githubusercontent.com/bbTushar/Crime-Investigation-and-Analysis-Strategy/master/screenshots/1.png)
+
+###### World Map
+
+![Dashboard](https://raw.githubusercontent.com/bbTushar/Crime-Investigation-and-Analysis-Strategy/master/screenshots/2.png)
+
+###### Projection
+
+![Dashboard](https://raw.githubusercontent.com/bbTushar/Crime-Investigation-and-Analysis-Strategy/master/screenshots/3.png)
+
+###### Crime Information
+
+![Dashboard](https://raw.githubusercontent.com/bbTushar/Crime-Investigation-and-Analysis-Strategy/master/screenshots/5.png)
+
+###### Women Safety
+
+![Dashboard](https://raw.githubusercontent.com/bbTushar/Crime-Investigation-and-Analysis-Strategy/master/screenshots/6.png)
