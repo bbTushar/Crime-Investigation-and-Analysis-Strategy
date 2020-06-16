@@ -1,4 +1,10 @@
 # Crime-Investigation-and-Analysis-Strategy
+Goals of CIAS :
+1) To let user get detailed crime anlysis and strategies.
+2) To give enough knowledge about different crimes and their consequences.
+3) Allows user to report crime using CIAS Reporting Portal.
+4) View latest news on CIAS Page.
+
 ## Prerequisite
 1. You must have an IDE installed on your system. Most preferable : Netbeans or IntelliJ IDEA with Java 8 or above installed.
 2. You must have _**Maven**_ installed in order to run this project.
