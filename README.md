@@ -14,4 +14,6 @@
 @ For any Queries contact me at tusharbadewale1998@gmail.com
 
 ## Screenshots
-![Image of Yaktocat](https://raw.githubusercontent.com/bbTushar/Crime-Investigation-and-Analysis-Strategy/master/screenshots/1.png)
+###### Dashboard
+
+https://raw.githubusercontent.com/bbTushar/Crime-Investigation-and-Analysis-Strategy/master/screenshots/1.png
