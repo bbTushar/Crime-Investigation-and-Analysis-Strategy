@@ -17,8 +17,6 @@
   III) Set-up the environmental variables: Please refer this video https://www.youtube.com/watch?v=WBOLiS4fsQs
 3. Setting up the environment variables is necessary.
 
-@ For any Queries contact me at tusharbadewale1998@gmail.com
-
 ## Screenshots
 #### Dashboard 
 User can have detail analysis of crimes with respect to year, country and crime type.
@@ -40,3 +38,7 @@ User can have detail analysis of crimes with respect to year, country and crime 
 #### Women Safety
 
 ![Dashboard](https://raw.githubusercontent.com/bbTushar/Crime-Investigation-and-Analysis-Strategy/master/screenshots/6.png)
+
+
+@ For any Queries contact me at tusharbadewale1998@gmail.com
+
