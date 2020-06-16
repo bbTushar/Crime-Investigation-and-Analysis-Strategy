@@ -16,4 +16,4 @@
 ## Screenshots
 ###### Dashboard
 
-!(https://raw.githubusercontent.com/bbTushar/Crime-Investigation-and-Analysis-Strategy/master/screenshots/1.png)
+![Dashboard](https://raw.githubusercontent.com/bbTushar/Crime-Investigation-and-Analysis-Strategy/master/screenshots/1.png)
