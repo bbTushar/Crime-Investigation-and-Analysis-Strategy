@@ -1,5 +1,5 @@
 # Crime-Investigation-and-Analysis-Strategy
-Goals of CIAS :
+**Goals of CIAS :
 1) To let user get detailed crime anlysis and strategies.
 2) To give enough knowledge about different crimes and their consequences.
 3) Allows user to report crime using CIAS Reporting Portal.
