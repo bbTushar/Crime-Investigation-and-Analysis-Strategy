@@ -13,6 +13,8 @@ import java.io.File;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -201,6 +203,7 @@ public class FXMLCrimeController implements Initializable {
             stage.initStyle(StageStyle.TRANSPARENT);
             stage.show();
         } catch (IOException var4) {
+            Logger.getLogger(FXMLCrimeController.class.getName()).log(Level.SEVERE, "Failed to load FXML: " + fxml, var4);
         }
 
     }
@@ -386,7 +389,7 @@ public class FXMLCrimeController implements Initializable {
         {
 
 
-            if(searchCr.getText().compareToIgnoreCase("assault")==1)
+            if(searchCr.getText().compareToIgnoreCase("assault")==0)
             {
                 BoxBlur blurr = new BoxBlur(5,5,5);
                 fxmlCias.setEffect(blurr);
@@ -395,7 +398,7 @@ public class FXMLCrimeController implements Initializable {
                 loadStage("/fxml/temp.fxml");
                 return(0);
             }
-            if(searchCr.getText().compareToIgnoreCase("robbery")==1)
+            if(searchCr.getText().compareToIgnoreCase("robbery")==0)
             {
                 BoxBlur blurr = new BoxBlur(5,5,5);
                 fxmlCias.setEffect(blurr);
@@ -405,7 +408,7 @@ public class FXMLCrimeController implements Initializable {
                 return(0);
 
             }
-            if(searchCr.getText().compareToIgnoreCase("terrorism")==1)
+            if(searchCr.getText().compareToIgnoreCase("terrorism")==0)
             {
                 BoxBlur blurr = new BoxBlur(5,5,5);
                 fxmlCias.setEffect(blurr);
@@ -414,7 +417,7 @@ public class FXMLCrimeController implements Initializable {
                 loadStage("/fxml/temp.fxml");
                 return(0);
             }
-            if(searchCr.getText().compareToIgnoreCase("abduction")==1 || searchCr.getText().compareToIgnoreCase("kidnapping")==1)
+            if(searchCr.getText().compareToIgnoreCase("abduction")==0 || searchCr.getText().compareToIgnoreCase("kidnapping")==0)
             {
                 BoxBlur blurr = new BoxBlur(5,5,5);
                 fxmlCias.setEffect(blurr);
@@ -424,7 +427,7 @@ public class FXMLCrimeController implements Initializable {
                 return(0);
 
             }
-            if(searchCr.getText().compareToIgnoreCase("dowry")==1)
+            if(searchCr.getText().compareToIgnoreCase("dowry")==0)
             {
                 BoxBlur blurr = new BoxBlur(5,5,5);
                 fxmlCias.setEffect(blurr);
@@ -434,7 +437,7 @@ public class FXMLCrimeController implements Initializable {
                 return(0);
 
             }
-            if(searchCr.getText().compareToIgnoreCase("murder")==1)
+            if(searchCr.getText().compareToIgnoreCase("murder")==0)
             {
                 BoxBlur blurr = new BoxBlur(5,5,5);
                 fxmlCias.setEffect(blurr);
@@ -445,7 +448,7 @@ public class FXMLCrimeController implements Initializable {
 
             }
 
-            if(searchCr.getText().compareToIgnoreCase("money laundering")==1)
+            if(searchCr.getText().compareToIgnoreCase("money laundering")==0)
             {
                 BoxBlur blurr = new BoxBlur(5,5,5);
                 fxmlCias.setEffect(blurr);
@@ -455,7 +458,7 @@ public class FXMLCrimeController implements Initializable {
                 return(0);
 
             }
-            if(searchCr.getText().compareToIgnoreCase("black marketing")==1)
+            if(searchCr.getText().compareToIgnoreCase("black marketing")==0)
             {
                 BoxBlur blurr = new BoxBlur(5,5,5);
                 fxmlCias.setEffect(blurr);
@@ -465,7 +468,7 @@ public class FXMLCrimeController implements Initializable {
                 return(0);
 
             }
-            if(searchCr.getText().compareToIgnoreCase("corruption")==1)
+            if(searchCr.getText().compareToIgnoreCase("corruption")==0)
             {
                 BoxBlur blurr = new BoxBlur(5,5,5);
                 fxmlCias.setEffect(blurr);

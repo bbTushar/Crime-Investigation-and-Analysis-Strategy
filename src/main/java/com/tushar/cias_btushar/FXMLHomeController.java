@@ -9,6 +9,8 @@ import com.jfoenix.controls.JFXButton;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javafx.animation.TranslateTransition;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -112,6 +114,7 @@ public class FXMLHomeController implements Initializable {
             stage.initStyle(StageStyle.TRANSPARENT);
             stage.show();
         } catch (IOException var4) {
+            Logger.getLogger(FXMLHomeController.class.getName()).log(Level.SEVERE, "Failed to load FXML: " + fxml, var4);
         }
 
     }

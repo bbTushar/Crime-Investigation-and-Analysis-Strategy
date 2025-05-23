@@ -15,18 +15,9 @@ public class MainApp extends Application {
     public void start(Stage stage) throws Exception {
         Parent root = FXMLLoader.load(getClass().getResource("/fxml/FXMLSignIn.fxml"));
         Scene scene = new Scene(root);
-      //  scene.getStylesheets().add("/styles/StyleSheet.css");
         stage.initStyle(StageStyle.TRANSPARENT);
         stage.setScene(scene);
         stage.show();
-        
-        /*
-        Scene scene = new Scene(root);
-        scene.getStylesheets().add("/styles/Styles.css");
-        
-        stage.setTitle("JavaFX and Maven");
-        stage.setScene(scene);
-        stage.show();*/
         
     }
 

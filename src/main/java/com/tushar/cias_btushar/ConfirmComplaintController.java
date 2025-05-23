@@ -60,7 +60,7 @@ public class ConfirmComplaintController implements Initializable {
         try {
 
             submit.setDisable(true);
-            Connection con = DbConnection.Connection();
+            Connection con = DbConnection.getConnection();
             PreparedStatement ps = null;
             ResultSet rs = null;
             ps = con.prepareStatement("SELECT victimFN,victimLN,category,city,district,state,station,date,time FROM complaint ORDER BY complaintNo DESC LIMIT 1");

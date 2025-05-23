@@ -108,7 +108,7 @@ public class FXMLSignInController implements Initializable {
     @FXML
     private void signIn(ActionEvent event) throws SQLException {
 
-        Connection con = DbConnection.Connection();
+        Connection con = DbConnection.getConnection();
         PreparedStatement ps = null;
         ResultSet rs = null;
         wrong.setVisible(false);

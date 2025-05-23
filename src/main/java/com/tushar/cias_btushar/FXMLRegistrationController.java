@@ -95,7 +95,7 @@ public class FXMLRegistrationController implements Initializable {
           
         }else
         {
-         conn = DbConnection.Connection();
+         conn = DbConnection.getConnection();
          String sql = "insert into register (firstN,lastN,phoneNo,id,pwd,address) values(?,?,?,?,?,?)";
             pst = conn.prepareStatement(sql);
             pst.setString(1,firstN.getText() );

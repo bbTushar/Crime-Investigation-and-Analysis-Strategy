@@ -16,14 +16,13 @@ import java.util.logging.Logger;
  * @author Tushar
  */
 public class DbConnection {
-     public static Connection Connection() throws SQLException{
+     public static Connection getConnection() throws SQLException{
         try {
             Class.forName("org.sqlite.JDBC");
             Connection conn = DriverManager.getConnection("jdbc:sqlite:cias.sqlite");
             return conn;
         } catch (ClassNotFoundException ex) {
-            Logger.getLogger(DbConnection.class.getName()).log(Level.SEVERE, null, ex);
-            return null;
+            throw new IllegalStateException("SQLite JDBC driver not found", ex);
         }
     }
 }

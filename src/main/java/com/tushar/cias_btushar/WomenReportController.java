@@ -42,9 +42,9 @@ import javafx.stage.FileChooser;
  * @author Tushar
  */
 public class WomenReportController implements Initializable {
-    Connection conn;
-    ResultSet rs;
-    PreparedStatement pst;
+    // Connection conn; // Will be made local to submit method
+    // ResultSet rs; // Will be made local to submit method
+    // PreparedStatement pst; // Will be made local to submit method
     @FXML
     private JFXComboBox<String> selectComplaint ;
     @FXML
@@ -231,9 +231,14 @@ public class WomenReportController implements Initializable {
 
     @FXML
     private void submit(ActionEvent event) throws SQLException, FileNotFoundException {
-        if( (selectComplaint.getValue() == null) || ( date.getValue() == null )||(time.getValue() == null)||(state.getText().isEmpty()) || (district.getText().isEmpty())|| ( city.getText().isEmpty()) || (station.getText().isEmpty())|| (cp==0) || (victimFN.getText().isEmpty()) || ( victimLN.getText().isEmpty()) || (selectRelation.getValue() == null) )
-        {
-            success.setVisible(false);
+        Connection conn = null;
+        PreparedStatement pst = null;
+        ResultSet rs = null;
+
+        try {
+            if( (selectComplaint.getValue() == null) || ( date.getValue() == null )||(time.getValue() == null)||(state.getText().isEmpty()) || (district.getText().isEmpty())|| ( city.getText().isEmpty()) || (station.getText().isEmpty())|| (cp==0) || (victimFN.getText().isEmpty()) || ( victimLN.getText().isEmpty()) || (selectRelation.getValue() == null) )
+            {
+                success.setVisible(false);
             problem.setVisible(true);
             if(toggle.isSelected())
             {
@@ -259,7 +264,7 @@ public class WomenReportController implements Initializable {
                     {
                         //Database Input with suspect Image
 
-                        conn = DbConnection.Connection();
+                        conn = DbConnection.getConnection();
                         String sql = "insert into complaint (category,date,time,reason,state,district,city,station,evidence,victimFN,victimLN,relation,incident,suspectFN,suspectLN,suspectID,suspectIDvalue,suspectPhoto) values(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
                         pst = conn.prepareStatement(sql);
                         pst.setString(1,(String)selectComplaint.getValue());
@@ -295,14 +300,8 @@ public class WomenReportController implements Initializable {
                                 acpane.getChildren().setAll(fxml);
                             } catch (IOException ex) {
                                 Logger.getLogger(FXMLCiasController.class.getName()).log(Level.SEVERE, null, ex);
-                            }finally{
-                                try {
-                                    rs.close();
-                                    pst.close();
-                                }catch (Exception e){
-
-                                }
                             }
+                            // finally block for rs.close() and pst.close() removed from here
 
                         }else{}
                     }
@@ -311,7 +310,7 @@ public class WomenReportController implements Initializable {
                         problem1.setVisible(false);
                         //Database Input with No Suspect Image
 
-                        conn = DbConnection.Connection();
+                        conn = DbConnection.getConnection();
                         String sql = "insert into complaint (category,date,time,reason,state,district,city,station,evidence,victimFN,victimLN,relation,incident,suspectFN,suspectLN,suspectID,suspectIDvalue) values(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
                         pst = conn.prepareStatement(sql);
                         pst.setString(1,(String)selectComplaint.getValue());
@@ -344,14 +343,8 @@ public class WomenReportController implements Initializable {
                                 acpane.getChildren().setAll(fxml);
                             } catch (IOException ex) {
                                 Logger.getLogger(FXMLCiasController.class.getName()).log(Level.SEVERE, null, ex);
-                            }finally{
-                                try {
-                                    rs.close();
-                                    pst.close();
-                                } catch (Exception e) {
-                                }
-
                             }
+                            // finally block for rs.close() and pst.close() removed from here
                         }
                     }
                 }
@@ -360,7 +353,7 @@ public class WomenReportController implements Initializable {
             {
                 //Database Input NO Suspect
                 problem.setVisible(false);
-                conn = DbConnection.Connection();
+                conn = DbConnection.getConnection();
                 String sql = "insert into complaint (category,date,time,reason,state,district,city,station,evidence,victimFN,victimLN,relation,incident) values(?,?,?,?,?,?,?,?,?,?,?,?,?)";
                 pst = conn.prepareStatement(sql);
                 pst.setString(1,(String)selectComplaint.getValue());
@@ -401,18 +394,33 @@ public class WomenReportController implements Initializable {
 
                     } catch (IOException ex) {
                         Logger.getLogger(FXMLCiasController.class.getName()).log(Level.SEVERE, null, ex);
-                    }finally{
-                        try {
-                            rs.close();
-                            pst.close();
-                        } catch (Exception e) {
-
-                        }
-
                     }
+                    // finally block for rs.close() and pst.close() removed from here
                 }
             }
-
+        }
+        } finally {
+            try {
+                if (rs != null) {
+                    rs.close();
+                }
+            } catch (SQLException e) {
+                Logger.getLogger(WomenReportController.class.getName()).log(Level.SEVERE, "Error closing ResultSet", e);
+            }
+            try {
+                if (pst != null) {
+                    pst.close();
+                }
+            } catch (SQLException e) {
+                Logger.getLogger(WomenReportController.class.getName()).log(Level.SEVERE, "Error closing PreparedStatement", e);
+            }
+            try {
+                if (conn != null) {
+                    conn.close();
+                }
+            } catch (SQLException e) {
+                Logger.getLogger(WomenReportController.class.getName()).log(Level.SEVERE, "Error closing Connection", e);
+            }
         }
     }
 
